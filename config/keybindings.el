@@ -7,8 +7,9 @@
  "TAB" '(switch-to-other-buffer :which-key "prev buffer")
  "SPC" '(avy-goto-word-or-subword-1 :which-key "go to char")
 
- ;; create a new prefix 
+ ;; create a new prefix (using :ignore t)
  "a" '(:ignore t :which-key "Applications")
  "ad" 'dired
 
+ ":" '(execute-extended-command :which-key "M-x")
  )

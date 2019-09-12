@@ -12,6 +12,8 @@
 (use-package evil :ensure t)
 (use-package which-key :ensure t)
 
+(require 'ivy)
+(ivy-mode)
 
 
 (require 'use-package)
