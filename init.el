@@ -16,32 +16,22 @@
 (setq package-enable-at-startup nil) ; tells emacs not to load any packages before starting up
 ;; the following lines tell emacs where on the internet to look up
 ;; for new packages.
-(setq package-archives '(("org"       . "http;://orgmode.org/elpa/")
+(setq package-archives '(("org"       . "http://orgmode.org/elpa/")
                          ("gnu"       . "http://elpa.gnu.org/packages/")
                          ("melpa"     . "https://melpa.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")))
 (package-initialize)
+
+;; add to load path
+(add-to-list 'load-path "~/.emacs.d/config")
 
 ;; Bootstrap `use-package'
 (unless (package-installed-p 'use-package) ; unless it is already installed
   (package-refresh-contents) ; updage packages archive
   (package-install 'use-package)) ; and install the most recent version of use-package
 
-(require 'use-package)
 
-(use-package general :ensure t
-	     :config
-	     (general-define-key "C-'" 'avy-goto-word-1))
-
-(use-package avy :ensure t
-	     :commands (avy-goto-word-1))
-(use-package ivy :ensure t)
-(use-package counsel :ensure t)
-(use-package swiper :ensure t)
-(use-package evil :ensure t)
-
-(require 'evil)
-(evil-mode 1)
+(load "packages.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
