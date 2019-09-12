@@ -12,4 +12,18 @@
  "ad" 'dired
 
  ":" '(execute-extended-command :which-key "M-x")
+ "." '(find-file :which-key "Find file")
+ 
+
+ "b" '(:ignore t :which-key "Buffer")
+ "bk" '(kill-current-buffer :which-key "kill current buffer")
+ "bx" '(kill-buffer-and-window :which-key "kill current buffer and window")
+
+ "w" '(:ignore t :which-key "Window")
+ "ws" '(evil-window-split :which-key "split window horizontally")
+ "w-" '(evil-window-vsplit :which-key "split window vertically")
+ "wl" '(evil-window-right :which-key "navigate to window, right")
+ "wh" '(evil-window-left :which-key "navigate to window, left")
+ "wj" '(evil-window-down :which-key "navigate to window, down")
+ "wk" '(evil-window-up :which-key "navigate to window, up")
  )
