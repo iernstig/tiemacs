@@ -11,10 +11,7 @@
 (setq coding-system-for-read 'utf-8 )	; use utf-8 by default
 (setq coding-system-for-write 'utf-8 )
 (setq sentence-end-double-space nil)	; sentence SHOULD end with only a point.
-(setq default-fill-column 80)		; toggle wrapping text at the 80th character
-(setq initial-scratch-message "Welcome in Emacs") ; print a default message in the empty scratch buffer opened at startup
-
-(require 'package)
+(setq default-fill-column 80)
 
 (setq package-enable-at-startup nil) ; tells emacs not to load any packages before starting up
 ;; the following lines tell emacs where on the internet to look up
@@ -41,6 +38,11 @@
 (use-package ivy :ensure t)
 (use-package counsel :ensure t)
 (use-package swiper :ensure t)
+(use-package evil :ensure t)
+
+(require 'evil)
+(evil-mode 1)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
