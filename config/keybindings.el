@@ -15,10 +15,13 @@
  "." '(find-file :which-key "Find file")
  
 
+ ;; Buffer management
  "b" '(:ignore t :which-key "Buffer")
+ "bb" '(counsel-switch-buffer "Switch to another buffer")
  "bk" '(kill-current-buffer :which-key "kill current buffer")
  "bx" '(kill-buffer-and-window :which-key "kill current buffer and window")
 
+ ;; Window navigation and splits
  "w" '(:ignore t :which-key "Window")
  "ws" '(evil-window-split :which-key "split window horizontally")
  "w-" '(evil-window-vsplit :which-key "split window vertically")
