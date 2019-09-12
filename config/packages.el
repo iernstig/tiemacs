@@ -10,7 +10,13 @@
 (use-package swiper :ensure t)
 (use-package ace-window :ensure t)
 (use-package evil :ensure t)
+(use-package which-key :ensure t)
+
+
 
 (require 'use-package)
 (require 'evil)
 (evil-mode 1)
+
+(require 'which-key)
+(which-key-mode)

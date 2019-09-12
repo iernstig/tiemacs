@@ -22,8 +22,12 @@
                          ("marmalade" . "http://marmalade-repo.org/packages/")))
 (package-initialize)
 
-;; add to load path
+;; add scripts to load path
 (add-to-list 'load-path "~/.emacs.d/config")
+
+;; add default dir for opening files
+(setq default-directory "~/")
+
 
 ;; Bootstrap `use-package'
 (unless (package-installed-p 'use-package) ; unless it is already installed
@@ -32,6 +36,7 @@
 
 
 (load "packages.el")
+(load "keybindings.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

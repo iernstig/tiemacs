@@ -1,0 +1,11 @@
+* TODO org-mode
+* TODO window navigation
+* TODO buffer key-binds
+* Python
+** Virtual envs
+** LSP
+** Debugging env / dap-python
+* TODO reading doc
+* TODO compiling a list of plugins to get and configure
+* TODO Read LSP doc
+
