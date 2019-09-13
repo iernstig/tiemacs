@@ -1,11 +1,68 @@
-* TODO org-mode
-* TODO window navigation
-* TODO buffer key-binds
+* DONE org-mode
+* DONE window navigation
+* DONE buffer key-binds
+* TODO compiling a list of plugins to get and configure
+
 * Python
 ** Virtual envs
 ** LSP
 ** Debugging env / dap-python
-* TODO reading doc
-* TODO compiling a list of plugins to get and configure
-* TODO Read LSP doc
+** IPython Notebooks
+* LSP
+** Code outline
+** Jump to definition
+** Read documentation
+** DAP-mode
+
+* Org-mode
+** EVIL-bindings
+** Fix M-enter new heading 
+** Org-rifle?
+** Org-super-agenda
+** org-noter
+** org-web: for mobile
+** org-sort-tasks
+   
+* web-mode
+**  Web beautify, js-beautify
+
+* Elexir
+
+
+* List of do want [0/0]
+
+** evil-org-mode
+** VirtualenvWrapper
+** StartupScreen
+** DesktopMode / Desktop+ / PerspMode : https://github.com/ffevotte/desktop-plus
+** SpaceBar + LSP : https://github.com/domtronn/spaceline-all-the-icons.el
+** Quick Startup : https://www.emacswiki.org/emacs/OptimizingEmacsStartup
+** SideBar.el
+** Anzu: https://github.com/syohex/emacs-anzu
+** HighligthSymbol?
+** RainbowDelimiters
+** VisualRegexpSteriods
+** RainbowMode?
+** MaGit
+*** Diff-hl
+** Focus Mode
+** Beacon, never lose your cursor again!
+** Dimmer, highligth current buffer
+** Color Identifiers Mode, might be better at color than default
+** Goto-line preview
+** Hungry-delete, remove bunch of spaces simply
+** Drag-stuff: maybe
+** YaSnippet
+** iAlign
+** Killring modes, check through!
+** IndentGuide
+** EVIL nerdCommenter
+** SmartParensMode
+** AgressiveIndentMode
+** FormatAll
+** AutoComplete / Company / flx / abbrev
+** FlyCheck
+** RestartEmacs
+** SprayMode
+
 
