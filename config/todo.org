@@ -39,6 +39,7 @@
 * List of do want [2/31]
 
 ** DONE StartupScreen
+** TODO Switch to previous buffer
 ** TODO Image for tiemacs at Dashboard
 ** TODO DesktopMode / Desktop+ / PerspMode : https://github.com/ffevotte/desktop-plus
 ** TODO SpaceBar + LSP : https://github.com/domtronn/spaceline-all-the-icons.el
