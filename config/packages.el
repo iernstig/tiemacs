@@ -25,9 +25,8 @@
 (use-package swiper :ensure t)
 (use-package evil :ensure t) 
 (use-package which-key :ensure t)
-(use-package all-the-icons :ensure t)
-(use-package doom-modeline :ensure t)
-
+(use-package projectile :ensure t)
+(use-package lsp-mode :ensure t)
 
 ;; --------------------------------------------------
 ;;           Enable all the packages
@@ -42,3 +41,5 @@
 (which-key-mode)
 (require 'doom-modeline)
 (doom-modeline-mode 1)
+(require 'projectile)
+(projectile-mode +1)
