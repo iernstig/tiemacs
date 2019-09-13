@@ -1,9 +1,13 @@
-(set-frame-font "IBM Plex Mono 10" nil t) ;; set the font
-(use-package dracula-theme :ensure t) ;; load the theme 
-(load-theme 'dracula t) ;; set the theme
-(global-display-line-numbers-mode) ;; display line numbers
-(add-to-list 'default-frame-alist '(ns-appearance . 'dark))
-(setq frame-title-format nil) ;; remove titlebar text
+(set-frame-font "Fira Code 10" nil t) ;; set the font
+;; load icons, modeline and theme 
+(use-package all-the-icons :ensure t)
+(use-package doom-modeline :ensure t)
+(use-package atom-one-dark-theme :ensure t) 
+
+(load-theme 'atom-one-dark t) 
+(global-display-line-numbers-mode) 
+;; remove titlebar text
+(setq frame-title-format nil) 
 
 
 
