@@ -29,6 +29,7 @@
  "wh" '(evil-window-left :which-key "navigate to window, left")
  "wj" '(evil-window-down :which-key "navigate to window, down")
  "wk" '(evil-window-up :which-key "navigate to window, up")
+ "wq" '(evil-window-delete :which-key "delete current window")
 
  ;; org-mode
  "o" '(:ignore t :which-key "Org-mode")
