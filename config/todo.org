@@ -8,6 +8,8 @@
 ** LSP
 ** Debugging env / dap-python
 ** IPython Notebooks
+** VirtualenvWrapper
+
 * LSP
 ** Code outline
 ** Jump to definition
@@ -15,6 +17,7 @@
 ** DAP-mode
 
 * Org-mode
+** org-todo in normal mode with key, (t?)
 ** EVIL-bindings
 ** Fix M-enter new heading 
 ** Org-rifle?
@@ -28,41 +31,41 @@
 
 * Elexir
 
+* MaGit
+** Diff-hl
+** git-undo
 
-* List of do want [0/0]
+* List of do want [0/30]
 
-** evil-org-mode
-** VirtualenvWrapper
-** StartupScreen
-** DesktopMode / Desktop+ / PerspMode : https://github.com/ffevotte/desktop-plus
-** SpaceBar + LSP : https://github.com/domtronn/spaceline-all-the-icons.el
-** Quick Startup : https://www.emacswiki.org/emacs/OptimizingEmacsStartup
-** SideBar.el
-** Anzu: https://github.com/syohex/emacs-anzu
-** HighligthSymbol?
-** RainbowDelimiters
-** VisualRegexpSteriods
-** RainbowMode?
-** MaGit
-*** Diff-hl
-** Focus Mode
-** Beacon, never lose your cursor again!
-** Dimmer, highligth current buffer
-** Color Identifiers Mode, might be better at color than default
-** Goto-line preview
-** Hungry-delete, remove bunch of spaces simply
-** Drag-stuff: maybe
-** YaSnippet
-** iAlign
-** Killring modes, check through!
-** IndentGuide
-** EVIL nerdCommenter
-** SmartParensMode
-** AgressiveIndentMode
-** FormatAll
-** AutoComplete / Company / flx / abbrev
-** FlyCheck
-** RestartEmacs
-** SprayMode
+** TODO StartupScreen
+** TODO DesktopMode / Desktop+ / PerspMode : https://github.com/ffevotte/desktop-plus
+** TODO SpaceBar + LSP : https://github.com/domtronn/spaceline-all-the-icons.el
+** TODO Quick Startup : https://www.emacswiki.org/emacs/OptimizingEmacsStartup
+** TODO SideBar.el
+** TODO Anzu: https://github.com/syohex/emacs-anzu
+** TODO HighligthSymbol?
+** TODO RainbowDelimiters
+** TODO VisualRegexpSteriods
+** TODO RainbowMode?
+** TODO Focus Mode
+** TODO Beacon, never lose your cursor again!
+** TODO Dimmer, highligth current buffer
+** TODO Color Identifiers Mode, might be better at color than default
+** TODO Goto-line preview
+** TODO Hungry-delete, remove bunch of spaces simply
+** TODO Drag-stuff: maybe
+** TODO YaSnippet
+** TODO iAlign
+** TODO Killring modes, check through!
+** TODO IndentGuide
+** TODO EVIL nerdCommenter
+** TODO SmartParensMode
+** TODO AgressiveIndentMode
+** TODO FormatAll
+** TODO AutoComplete / Company / flx / abbrev
+** TODO FlyCheck
+** TODO RestartEmacs
+** TODO SprayMode
+** TODO Keep .emacs.d clean
 
 
