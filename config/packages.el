@@ -18,19 +18,15 @@
 ;;           Packages installation list 
 ;; --------------------------------------------------
 
-(use-package general :ensure t
-	     :config
-	     (general-define-key "C-'" 'avy-goto-word-1))
-
-(use-package avy :ensure t
-	     :commands (avy-goto-word-1))
-
+(use-package general :ensure t)
+(use-package avy :ensure t)
 (use-package ivy :ensure t)
 (use-package counsel :ensure t)
 (use-package swiper :ensure t)
-
-(use-package evil :ensure t) ;; for awesome navigation 
+(use-package evil :ensure t) 
 (use-package which-key :ensure t)
+(use-package all-the-icons :ensure t)
+(use-package doom-modeline :ensure t)
 
 
 ;; --------------------------------------------------
@@ -44,3 +40,5 @@
 (evil-mode 1)
 (require 'which-key)
 (which-key-mode)
+(require 'doom-modeline)
+(doom-modeline-mode 1)
