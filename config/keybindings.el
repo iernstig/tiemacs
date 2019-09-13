@@ -17,7 +17,7 @@
 
  ;; Buffer management
  "b" '(:ignore t :which-key "Buffer")
- "bb" '(counsel-switch-buffer "Switch to another buffer")
+ "bb" '(counsel-switch-buffer :which-key "Switch to another buffer")
  "bk" '(kill-current-buffer :which-key "kill current buffer")
  "bx" '(kill-buffer-and-window :which-key "kill current buffer and window")
 
