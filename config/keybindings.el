@@ -29,4 +29,8 @@
  "wh" '(evil-window-left :which-key "navigate to window, left")
  "wj" '(evil-window-down :which-key "navigate to window, down")
  "wk" '(evil-window-up :which-key "navigate to window, up")
+
+ ;; org-mode
+ "o" '(:ignore t :which-key "Org-mode")
+ "ot" '(org-todo :which-key "todo")
  )
