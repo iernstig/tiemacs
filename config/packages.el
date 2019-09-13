@@ -27,6 +27,11 @@
 (use-package which-key :ensure t)
 (use-package projectile :ensure t)
 (use-package lsp-mode :ensure t)
+(use-package dashboard :ensure t
+  :config
+  (dashboard-setup-startup-hook))
+(use-package beacon :ensure t)
+
 
 ;; --------------------------------------------------
 ;;           Enable all the packages
@@ -43,3 +48,19 @@
 (doom-modeline-mode 1)
 (require 'projectile)
 (projectile-mode +1)
+(require 'beacon)
+(beacon-mode 1)
+
+
+;; --------------------------------------------------
+;;           Package configuration section
+;; --------------------------------------------------
+
+;; dashboard
+(setq dashboard-banner-logo-title "Welcome to TieMacs")
+(setq dashboard-items '((recents .5)
+			(bookmarks . 5)
+			(projects . 5)
+			(agenda . 5)
+			(registers . 5)))
+(setq dashboard-center-content t)
