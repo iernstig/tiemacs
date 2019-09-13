@@ -64,4 +64,3 @@
 			(projects . 5)
 			(agenda . 5)
 			(registers . 5)))
-(setq dashboard-center-content t)

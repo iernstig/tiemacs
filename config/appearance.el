@@ -1,4 +1,10 @@
-(set-frame-font "Fira Code 10" nil t) ;; set the font
+;; remove menus from visibility
+(menu-bar-mode -1)
+(toggle-scroll-bar -1)
+(tool-bar-mode -1)
+
+;; set the font
+(set-frame-font "Fira Code 10" nil t) 
 ;; load icons, modeline and theme 
 (use-package all-the-icons :ensure t)
 (use-package doom-modeline :ensure t)
@@ -8,7 +14,6 @@
 (global-display-line-numbers-mode) 
 ;; remove titlebar text
 (setq frame-title-format nil) 
-
 
 
 

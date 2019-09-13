@@ -12,10 +12,6 @@
 (setq sentence-end-double-space nil)	; sentence SHOULD end with only a point.
 (setq default-fill-column 80)
 
-;; remove menus from visibility
-(menu-bar-mode -1)
-(toggle-scroll-bar -1)
-(tool-bar-mode -1)
 
 ;; set the default dir to user home
 (setq default-directory "~/")
