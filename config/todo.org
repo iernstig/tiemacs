@@ -25,7 +25,8 @@
 ** org-noter
 ** org-web: for mobile
 ** org-sort-tasks
-   
+** Fix priorities
+** Fix TODO states
 * web-mode
 **  Web beautify, js-beautify
 
@@ -35,13 +36,14 @@
 ** Diff-hl
 ** git-undo
 
-* List of do want [0/30]
+* List of do want [1/31]
 
-** TODO StartupScreen
+** DONE StartupScreen
+** TODO Image for tiemacs at Dashboard
 ** TODO DesktopMode / Desktop+ / PerspMode : https://github.com/ffevotte/desktop-plus
 ** TODO SpaceBar + LSP : https://github.com/domtronn/spaceline-all-the-icons.el
 ** TODO Quick Startup : https://www.emacswiki.org/emacs/OptimizingEmacsStartup
-** TODO SideBar.el
+** TODO SideBar with buffer list, project categories. (Modify treemacs?)
 ** TODO Anzu: https://github.com/syohex/emacs-anzu
 ** TODO HighligthSymbol?
 ** TODO RainbowDelimiters
@@ -69,10 +71,11 @@
 ** TODO Keep .emacs.d 
 * Productivity
 ** backward-kill-word
-** kill-region
+** kill-region 
 ** backward-kill-region
 ** backward-kill-sentence
 ** Tmp buffers with snippets, and for org-note
+** Explore EVIL collections
 
 
 
