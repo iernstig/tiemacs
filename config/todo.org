@@ -36,7 +36,7 @@
 ** Diff-hl
 ** git-undo
 
-* List of do want [1/31]
+* List of do want [2/31]
 
 ** DONE StartupScreen
 ** TODO Image for tiemacs at Dashboard
@@ -50,7 +50,7 @@
 ** TODO VisualRegexpSteriods
 ** TODO RainbowMode?
 ** TODO Focus Mode
-** TODO Beacon, never lose your cursor again!
+** DONE Beacon, never lose your cursor again!
 ** TODO Dimmer, highligth current buffer
 ** TODO Color Identifiers Mode, might be better at color than default
 ** TODO Goto-line preview
