@@ -30,6 +30,7 @@
  "wj" '(evil-window-down :which-key "navigate to window, down")
  "wk" '(evil-window-up :which-key "navigate to window, up")
  "wq" '(evil-window-delete :which-key "delete current window")
+ "wx" '(kill-buffer-and-window :which-key "kill current buffer and window")
 
  ;; org-mode
  "o" '(:ignore t :which-key "Org-mode")
