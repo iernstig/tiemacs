@@ -26,6 +26,7 @@
 (use-package evil :ensure t) 
 (use-package which-key :ensure t)
 (use-package projectile :ensure t)
+(use-package doom-modeline :ensure t)
 (use-package lsp-mode :ensure t)
 (use-package dashboard :ensure t
   :config
