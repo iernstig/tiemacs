@@ -66,6 +66,14 @@
 ** TODO FlyCheck
 ** TODO RestartEmacs
 ** TODO SprayMode
-** TODO Keep .emacs.d clean
+** TODO Keep .emacs.d 
+* Productivity
+** backward-kill-word
+** kill-region
+** backward-kill-region
+** backward-kill-sentence
+** Tmp buffers with snippets, and for org-note
+
+
 
 
