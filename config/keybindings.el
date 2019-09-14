@@ -11,7 +11,7 @@
  "a" '(:ignore t :which-key "Applications")
  "ad" 'dired
 
- ":" '(execute-extended-command :which-key "M-x")
+ ":" '(counsel-M-x :which-key "M-x")
  "." '(find-file :which-key "Find file")
 
  "q" '(:ignore t :which-key "Quit")
