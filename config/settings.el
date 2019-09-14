@@ -15,5 +15,9 @@
 (setq custom-file "~/.emacs.d/config/custom.el")
 (load custom-file)
 
+;; create auto-save-list directory, sometimes it does not exist for some reason
+(unless (file-directory-p "~/.emacs.d/auto-save-list")
+  (mkdir "~/.emacs.d/auto-save-list"))
+
 ;; set the default dir to user home
 (setq default-directory "~/")

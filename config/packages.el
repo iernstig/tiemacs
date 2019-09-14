@@ -34,6 +34,7 @@
 (use-package beacon :ensure t)
 (use-package restart-emacs :ensure t)
 ;;(use-package desktop+ :ensure t)
+;;(use-package anzu :ensure t)
 
 
 ;; --------------------------------------------------
@@ -53,6 +54,7 @@
 (projectile-mode +1)
 (require 'beacon)
 (beacon-mode 1)
+(global-anzu-mode +1)
 
 
 ;; --------------------------------------------------

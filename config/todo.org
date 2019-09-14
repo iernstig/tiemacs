@@ -36,10 +36,13 @@
 ** Diff-hl
 ** git-undo
 
-* List of do want [5/32]
+* General fixes [1/1]:
+** DONE Fix auto gen of .emacs.d/auto-save-list/ directory
+* List of do want plugins[6/31]
 
 ** DONE StartupScreen
-** TODO Switch to previous buffer
+** DONE Switch to previous buffer
+** TODO BufferStack
 ** TODO Image for tiemacs at Dashboard
 ** TODO DesktopMode / Desktop+ / PerspMode : https://github.com/ffevotte/desktop-plus
 ** DONE SpaceBar + LSP : https://github.com/domtronn/spaceline-all-the-icons.el
@@ -69,14 +72,18 @@
 ** DONE RestartEmacs
 ** TODO SprayMode
 ** DONE Keep .emacs.d 
-* Productivity
-** backward-kill-word
-** kill-region 
-** backward-kill-region
-** backward-kill-sentence
-** Tmp buffers with snippets, and for org-note
-** Explore EVIL collections
-
+* Productivity [0/6]
+** TODO backward-kill-word
+** TODO kill-region 
+** TODO backward-kill-region
+** TODO backward-kill-sentence
+** TODO Tmp buffers with snippets, and for org-note
+** TODO Explore EVIL collections
+* Exploring plugins [/]
+** Projectile:
+*** Questions:
+**** How to replace all var names in project
+**** 
 
 
 
