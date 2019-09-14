@@ -1,8 +1,7 @@
 * DONE org-mode
 * DONE window navigation
 * DONE buffer key-binds
-* TODO compiling a list of plugins to get and configure
-
+* DONE compiling a list of plugins to get and configure
 * Python
 ** Virtual envs
 ** LSP
@@ -27,6 +26,7 @@
 ** org-sort-tasks
 ** Fix priorities
 ** Fix TODO states
+** Enter to go from TODO -> DONE
 * web-mode
 **  Web beautify, js-beautify
 
@@ -36,13 +36,13 @@
 ** Diff-hl
 ** git-undo
 
-* List of do want [2/31]
+* List of do want [4/32]
 
 ** DONE StartupScreen
 ** TODO Switch to previous buffer
 ** TODO Image for tiemacs at Dashboard
 ** TODO DesktopMode / Desktop+ / PerspMode : https://github.com/ffevotte/desktop-plus
-** TODO SpaceBar + LSP : https://github.com/domtronn/spaceline-all-the-icons.el
+** DONE SpaceBar + LSP : https://github.com/domtronn/spaceline-all-the-icons.el
 ** TODO Quick Startup : https://www.emacswiki.org/emacs/OptimizingEmacsStartup
 ** TODO SideBar with buffer list, project categories. (Modify treemacs?)
 ** TODO Anzu: https://github.com/syohex/emacs-anzu
@@ -69,7 +69,7 @@
 ** TODO FlyCheck
 ** TODO RestartEmacs
 ** TODO SprayMode
-** TODO Keep .emacs.d 
+** DONE Keep .emacs.d 
 * Productivity
 ** backward-kill-word
 ** kill-region 

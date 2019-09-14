@@ -1,6 +1,8 @@
 ;; remove menus from visibility
 (menu-bar-mode -1)
-(scroll-bar-mode -1)
+;; tell emacs we never want scroll bars
+(add-to-list 'default-frame-alist
+             '(vertical-scroll-bars . nil))
 (tool-bar-mode -1)
 
 ;; set the font
