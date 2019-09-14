@@ -12,6 +12,8 @@
 (setq sentence-end-double-space nil)	; sentence SHOULD end with only a point.
 (setq default-fill-column 80)
 
+(setq custom-file "~/.emacs.d/config/custom.el")
+(load custom-file)
 
 ;; set the default dir to user home
 (setq default-directory "~/")
