@@ -18,21 +18,22 @@
 ;;           Packages installation list 
 ;; --------------------------------------------------
 
-(use-package general :ensure t)
-(use-package avy :ensure t)
-(use-package ivy :ensure t)
-(use-package counsel :ensure t)
-(use-package swiper :ensure t)
-(use-package evil :ensure t) 
-(use-package which-key :ensure t)
-(use-package projectile :ensure t)
-(use-package doom-modeline :ensure t)
-(use-package lsp-mode :ensure t)
-(use-package dashboard :ensure t
+(use-package general :ensure t) ;; for keybindings
+(use-package avy :ensure t) ;; Jump to things, not currently used though
+(use-package ivy :ensure t) ;; lightweight emacs vanilla enhancements
+(use-package counsel :ensure t) ;; addon for ivy
+(use-package swiper :ensure t) ;; addon for ivy
+(use-package evil :ensure t)  ;; essential bindings for buffer nav
+(use-package which-key :ensure t) ;; describe keybingings
+(use-package projectile :ensure t) ;; project management
+(use-package doom-modeline :ensure t) ;; fancy, lightweight modeline
+(use-package lsp-mode :ensure t) ;; for intelligent code analysis, debugging etc.
+(use-package dashboard :ensure t ;; start dashboard 
   :config
   (dashboard-setup-startup-hook))
-(use-package beacon :ensure t)
-(use-package restart-emacs :ensure t)
+(use-package beacon :ensure t) ;; for showing the cursor in new buffers
+(use-package restart-emacs :ensure t) ;; simple restart of emacs
+(use-package smex :ensure t)
 ;;(use-package desktop+ :ensure t)
 ;;(use-package anzu :ensure t)
 
@@ -41,6 +42,8 @@
 ;;           Enable all the packages
 ;; --------------------------------------------------
 
+(require 'smex)
+(smex-initialize)
 (require 'use-package)
 (require 'ivy)
 (ivy-mode)
@@ -54,7 +57,8 @@
 (projectile-mode +1)
 (require 'beacon)
 (beacon-mode 1)
-(global-anzu-mode +1)
+
+
 
 
 ;; --------------------------------------------------
