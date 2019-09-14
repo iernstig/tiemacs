@@ -13,6 +13,9 @@
 
  ":" '(execute-extended-command :which-key "M-x")
  "." '(find-file :which-key "Find file")
+
+ "q" '(:ignore t :which-key "Quit")
+ "qr" '(restart-emacs :which-key "Restart Emacs")
  
 
  ;; Buffer management
@@ -20,6 +23,7 @@
  "bb" '(counsel-switch-buffer :which-key "Switch to another buffer")
  "bk" '(kill-current-buffer :which-key "kill current buffer")
  "bx" '(kill-buffer-and-window :which-key "kill current buffer and window")
+ "bp" '(previous-buffer :which-key "switch back to prev buffer")
 
  ;; Window navigation and splits
  "w" '(:ignore t :which-key "Window")
