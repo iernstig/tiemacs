@@ -6,7 +6,16 @@
 (tool-bar-mode -1)
 
 ;; set the font
-(set-frame-font "Fira Code 10" nil t) 
+;;(set-frame-font "Fira Code 10" nil t) 
+
+(defun set-font (fontname fontsize)
+  (set-face-attribute 'default nil :font
+		      (format "%s:pixelsize=%d" fontname fontsize)))
+
+(when window-system
+  (if (> (x-display-pixel-width) 2000)
+	 (set-font "Fira Code" 18)
+	 (set-font "Fira Code" 12)))
 ;; load icons, modeline and theme 
 (use-package all-the-icons :ensure t)
 (use-package doom-modeline :ensure t)
