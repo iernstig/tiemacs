@@ -16,8 +16,8 @@
 ** DAP-mode
 
 * Org-mode
-** org-todo in normal mode with key, (t?)
-** EVIL-bindings
+** TODO org-todo in normal mode with key, (t?)
+** TODO EVIL-bindings
 ** Fix M-enter new heading 
 ** Org-rifle?
 ** Org-super-agenda
@@ -36,7 +36,7 @@
 ** Diff-hl
 ** git-undo
 
-* List of do want [4/32]
+* List of do want [5/32]
 
 ** DONE StartupScreen
 ** TODO Switch to previous buffer
@@ -56,7 +56,6 @@
 ** TODO Color Identifiers Mode, might be better at color than default
 ** TODO Goto-line preview
 ** TODO Hungry-delete, remove bunch of spaces simply
-** TODO Drag-stuff: maybe
 ** TODO YaSnippet
 ** TODO iAlign
 ** TODO Killring modes, check through!
@@ -67,7 +66,7 @@
 ** TODO FormatAll
 ** TODO AutoComplete / Company / flx / abbrev
 ** TODO FlyCheck
-** TODO RestartEmacs
+** DONE RestartEmacs
 ** TODO SprayMode
 ** DONE Keep .emacs.d 
 * Productivity
