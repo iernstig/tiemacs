@@ -32,6 +32,8 @@
   :config
   (dashboard-setup-startup-hook))
 (use-package beacon :ensure t)
+(use-package restart-emacs :ensure t)
+;;(use-package desktop+ :ensure t)
 
 
 ;; --------------------------------------------------
