@@ -17,7 +17,7 @@
 
 * Org-mode
 ** TODO org-todo in normal mode with key, (t?)
-** TODO EVIL-bindings
+** DONE EVIL-bindings
 ** Fix M-enter new heading 
 ** Org-rifle?
 ** Org-super-agenda
@@ -36,30 +36,26 @@
 ** Diff-hl
 ** git-undo
 
+* Projectile
+** Setup project for compilation:
+*** Python
+*** CMAKE
+*** Make
+*** JAVA
+*** Node
+*** Elexir
+
 * General fixes [1/1]:
 ** DONE Fix auto gen of .emacs.d/auto-save-list/ directory
-* List of do want plugins[6/31]
-
-** DONE StartupScreen
-** DONE Switch to previous buffer
+* List of do want plugins[14/34]
 ** TODO BufferStack
-** TODO Image for tiemacs at Dashboard
 ** TODO DesktopMode / Desktop+ / PerspMode : https://github.com/ffevotte/desktop-plus
-** DONE SpaceBar + LSP : https://github.com/domtronn/spaceline-all-the-icons.el
-** TODO Quick Startup : https://www.emacswiki.org/emacs/OptimizingEmacsStartup
+** TODO Fix dashboard
 ** TODO SideBar with buffer list, project categories. (Modify treemacs?)
-** TODO Anzu: https://github.com/syohex/emacs-anzu
 ** TODO HighligthSymbol?
-** TODO RainbowDelimiters
-** TODO VisualRegexpSteriods
-** TODO RainbowMode?
-** TODO Focus Mode
-** DONE Beacon, never lose your cursor again!
 ** TODO Dimmer, highligth current buffer
-** TODO Color Identifiers Mode, might be better at color than default
 ** TODO Goto-line preview
-** TODO Hungry-delete, remove bunch of spaces simply
-** TODO YaSnippet
+** TODO YaSnippet / abbrev
 ** TODO iAlign
 ** TODO Killring modes, check through!
 ** TODO IndentGuide
@@ -67,11 +63,25 @@
 ** TODO SmartParensMode
 ** TODO AgressiveIndentMode
 ** TODO FormatAll
-** TODO AutoComplete / Company / flx / abbrev
+** TODO AutoComplete / Company / 
+** TODO FuzzyMatching: FLX
 ** TODO FlyCheck
-** DONE RestartEmacs
-** TODO SprayMode
+** TODO SprayMode, speed reading mode
+** TODO Anzu: https://github.com/syohex/emacs-anzu
+** DONE Hungry-delete, remove bunch of spaces simply
+** DONE Color Identifiers Mode, might be better at color than default
+** DONE CentaurTabs
+** DONE Solaire-mode for sidebars!
+** DONE RainbowDelimiters
+** DONE VisualRegexpSteriods
+** DONE RainbowMode?
+** DONE Focus Mode
+** DONE Beacon, never lose your cursor again!
 ** DONE Keep .emacs.d 
+** DONE RestartEmacs
+** DONE SpaceBar 
+** DONE StartupScreen
+** DONE Switch to previous buffer
 * Productivity [0/6]
 ** TODO backward-kill-word
 ** TODO kill-region 
@@ -79,11 +89,8 @@
 ** TODO backward-kill-sentence
 ** TODO Tmp buffers with snippets, and for org-note
 ** TODO Explore EVIL collections
-* Exploring plugins [/]
-** Projectile:
-*** Questions:
-**** How to replace all var names in project
-**** 
+* Exploring plugins [0/0]
+** Projectile
 
 
 
