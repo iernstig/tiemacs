@@ -1,3 +1,7 @@
+;; --------------------------------------------------
+;;           general package definition
+;;           and bootstrap of use-package
+;; --------------------------------------------------
 
 (setq package-enable-at-startup nil) ; tells emacs not to load any packages before starting up
 (setq package-archives '(("org"       . "http://orgmode.org/elpa/")
@@ -5,7 +9,6 @@
                          ("melpa"     . "https://melpa.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")))
 (package-initialize)
-
 ;; --------------------------------------------------
 ;;            Bootstrap 'use-package'
 ;; --------------------------------------------------
@@ -18,22 +21,26 @@
 ;;           Packages installation list 
 ;; --------------------------------------------------
 
-(use-package general :ensure t) ;; for keybindings
-(use-package avy :ensure t) ;; Jump to things, not currently used though
+;; for keybindings
+(use-package general :ensure t) 
+;; Jump to things, not currently used though
+(use-package avy :ensure t) 
 (use-package ivy :ensure t) ;; lightweight emacs vanilla enhancements
 (use-package counsel :ensure t) ;; addon for ivy
 (use-package swiper :ensure t) ;; addon for ivy
 (use-package evil :ensure t)  ;; essential bindings for buffer nav
 (use-package which-key :ensure t) ;; describe keybingings
 (use-package projectile :ensure t) ;; project management
-(use-package doom-modeline :ensure t) ;; fancy, lightweight modeline
+(use-package treemacs :ensure t) ;; tree like file view
 (use-package lsp-mode :ensure t) ;; for intelligent code analysis, debugging etc.
+(use-package lsp-ui :ensure t)
 (use-package dashboard :ensure t ;; start dashboard 
   :config
   (dashboard-setup-startup-hook))
 (use-package beacon :ensure t) ;; for showing the cursor in new buffers
 (use-package restart-emacs :ensure t) ;; simple restart of emacs
 (use-package smex :ensure t)
+(use-package hungry-delete :ensure t) ;; delete needless space in files
 ;;(use-package desktop+ :ensure t)
 ;;(use-package anzu :ensure t)
 
@@ -51,14 +58,12 @@
 (evil-mode 1)
 (require 'which-key)
 (which-key-mode)
-(require 'doom-modeline)
-(doom-modeline-mode 1)
 (require 'projectile)
 (projectile-mode +1)
 (require 'beacon)
 (beacon-mode 1)
-
-
+(require 'lsp-mode)
+(global-hungry-delete-mode)
 
 
 ;; --------------------------------------------------
