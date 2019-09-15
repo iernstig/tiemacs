@@ -30,10 +30,22 @@
 (use-package swiper :ensure t) ;; addon for ivy
 (use-package evil :ensure t)  ;; essential bindings for buffer nav
 (use-package which-key :ensure t) ;; describe keybingings
+
 (use-package projectile :ensure t) ;; project management
-(use-package treemacs :ensure t) ;; tree like file view
+
 (use-package lsp-mode :ensure t) ;; for intelligent code analysis, debugging etc.
 (use-package lsp-ui :ensure t)
+
+(use-package magit :ensure t)
+
+(use-package yasnippet :ensure t)
+
+(use-package treemacs :ensure t) ;; tree like file view
+(use-package lsp-treemacs :ensure t)
+(use-package treemacs-evil :ensure t)
+(use-package treemacs-magit :ensure t)
+(use-package treemacs-projectile :ensure t)
+
 (use-package dashboard :ensure t ;; start dashboard 
   :config
   (dashboard-setup-startup-hook))
@@ -64,6 +76,8 @@
 (beacon-mode 1)
 (require 'lsp-mode)
 (global-hungry-delete-mode)
+(require 'yasnippet)
+(yas-global-mode 1)
 
 
 ;; --------------------------------------------------

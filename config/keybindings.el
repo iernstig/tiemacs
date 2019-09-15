@@ -19,6 +19,7 @@
  ;; Restart commands
  "q" '(:ignore t :which-key "Quit")
  "qr" '(restart-emacs :which-key "Restart Emacs")
+ "qq" '(save-buffers-kill-emacs :which-key "Quit n' save buffers")
 
  ;; commenting commands
  "c" '(comment-region :which-key "Comment region")
@@ -41,14 +42,25 @@
  "wq" '(evil-window-delete :which-key "delete current window")
  "wx" '(kill-buffer-and-window :which-key "kill current buffer and window")
 
- ;; org-mode
- "o" '(:ignore t :which-key "Org-mode")
- "ot" '(org-todo :which-key "todo")
+ "g" '(:ignore t :which-key "MaGit")
+ "gg" '(magit-status :which-key "Status")
 
- ;; projectile
+ ;; org-mode, temporary!
+ "m" '(:ignore t :which-key "Org-mode")
+ "mt" '(org-todo :which-key "todo")
+
+ ;; p: projects
  "p" '(projectile-command-map :package projectile :which-key "projectile command map")
+
+ ;; o: open
+ "o" '(:ignore t :which-key "Treemacs")
+ "ot" '(treemacs :which-key "Toggle Treemacs")
+ "t?" '(treemacs-helpful-hydra :which-key "Helpful Hydra")
+
+ ;; centaur tabs
+ "t" '(:ignore t :which-key "Centaur tabs")
+ "tn" '(centaur-tabs-forward :which-key "next tab")
+ "tt" '(centaur-tabs-backward :which-key "prev-tab")
  )
 
-;; (my-leader-def
-;;  :keymaps 'org-mode-map
  

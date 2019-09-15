@@ -41,8 +41,8 @@
 *** Node
 *** Elexir
 
-* General fixes [1/1]:
-** TODO Keybindings for centaur tabs
+* General fixes [2/4]:
+** DONE Keybindings for centaur tabs
 ** TODO fix all the icons with sidebar and solarized shit
 ** TODO Explore EVIL collections, especially minibuffer mode: https://github.com/emacs-evil/evil-collection/blob/master/evil-collection-minibuffer.el
 ** DONE Fix auto gen of .emacs.d/auto-save-list/ directory
