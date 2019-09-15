@@ -1,7 +1,3 @@
-* DONE org-mode
-* DONE window navigation
-* DONE buffer key-binds
-* DONE compiling a list of plugins to get and configure
 * Python
 ** Virtual envs
 ** LSP
@@ -10,6 +6,7 @@
 ** VirtualenvWrapper
 
 * LSP
+** Make it work for all languages
 ** Code outline
 ** Jump to definition
 ** Read documentation
@@ -17,8 +14,8 @@
 
 * Org-mode
 ** TODO org-todo in normal mode with key, (t?)
-** DONE EVIL-bindings
-** Fix M-enter new heading 
+** EVIL-bindings, try them out, make bindings for all!
+*** TODO https://github.com/Somelauw/evil-org-mode/blob/master/doc/keythemes.org
 ** Org-rifle?
 ** Org-super-agenda
 ** org-noter
@@ -35,7 +32,6 @@
 * MaGit
 ** Diff-hl
 ** git-undo
-
 * Projectile
 ** Setup project for compilation:
 *** Python
@@ -46,6 +42,7 @@
 *** Elexir
 
 * General fixes [1/1]:
+** TODO Keybindings for centaur tabs
 ** DONE Fix auto gen of .emacs.d/auto-save-list/ directory
 * List of do want plugins[14/34]
 ** TODO BufferStack
