@@ -1,11 +1,13 @@
 (general-define-key
- :states '(normal visual insert emacs)
+ :keymaps '(normal visual insert emacs motion)
  :prefix "SPC"
  :non-normal-prefix "C-SPC"
+ "" nil
 
  ;;simple command
  "TAB" '(switch-to-other-buffer :which-key "prev buffer")
  "SPC" '(avy-goto-word-or-subword-1 :which-key "go to char")
+
 
  ;; create a new prefix (using :ignore t)
  "a" '(:ignore t :which-key "Applications")
@@ -14,9 +16,12 @@
  ":" '(counsel-M-x :which-key "M-x")
  "." '(find-file :which-key "Find file")
 
+ ;; Restart commands
  "q" '(:ignore t :which-key "Quit")
  "qr" '(restart-emacs :which-key "Restart Emacs")
- 
+
+ ;; commenting commands
+ "c" '(comment-region :which-key "Comment region")
 
  ;; Buffer management
  "b" '(:ignore t :which-key "Buffer")
@@ -28,7 +33,7 @@
  ;; Window navigation and splits
  "w" '(:ignore t :which-key "Window")
  "ws" '(evil-window-split :which-key "split window horizontally")
- "w-" '(evil-window-vsplit :which-key "split window vertically")
+ "wv" '(evil-window-vsplit :which-key "split window vertically")
  "wl" '(evil-window-right :which-key "navigate to window, right")
  "wh" '(evil-window-left :which-key "navigate to window, left")
  "wj" '(evil-window-down :which-key "navigate to window, down")
@@ -39,4 +44,11 @@
  ;; org-mode
  "o" '(:ignore t :which-key "Org-mode")
  "ot" '(org-todo :which-key "todo")
+
+ ;; projectile
+ "p" '(projectile-command-map :package projectile :which-key "projectile command map")
  )
+
+;; (my-leader-def
+;;  :keymaps 'org-mode-map
+ 
