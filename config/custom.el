@@ -8,7 +8,7 @@
     ("2d1fe7c9007a5b76cea4395b0fc664d0c1cfd34bb4f1860300347cdad67fb2f9" default)))
  '(package-selected-packages
    (quote
-    (yasnippet treemacs-magit treemacs-icons-dired use-package-hydra ivy-hydra lsp-treemacs treemacs-projectile treemacs-evil helpful dired-sidebar evil-org evil-org-mode hungry-delete hungry-delet treemacs ibuffer-sidebar color-identifiers-mode centaur-tabs lsp-ui sublimity doom-themes solaire-mode visual-regexp-steroids focus focus-mode rainbow-delimiters rainbow-mode sr-speedbar anzu restart-emacs org-bullets atom-one-dark-theme beacon dashboard lsp-mode doom-modeline projectile which-key evil counsel ivy avy general use-package))))
+    (evil-magit yasnippet treemacs-magit treemacs-icons-dired use-package-hydra ivy-hydra lsp-treemacs treemacs-projectile treemacs-evil helpful dired-sidebar evil-org evil-org-mode hungry-delete hungry-delet treemacs ibuffer-sidebar color-identifiers-mode centaur-tabs lsp-ui sublimity doom-themes solaire-mode visual-regexp-steroids focus focus-mode rainbow-delimiters rainbow-mode sr-speedbar anzu restart-emacs org-bullets atom-one-dark-theme beacon dashboard lsp-mode doom-modeline projectile which-key evil counsel ivy avy general use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

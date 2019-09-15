@@ -37,6 +37,7 @@
 (use-package lsp-ui :ensure t)
 
 (use-package magit :ensure t)
+(use-package evil-magit :ensure t)
 
 (use-package yasnippet :ensure t)
 

@@ -1,5 +1,6 @@
 (general-define-key
- :keymaps '(normal visual insert emacs motion)
+ :states '(normal visual insert emacs motion)
+ :keymaps 'override
  :prefix "SPC"
  :non-normal-prefix "C-SPC"
  "" nil
@@ -62,5 +63,3 @@
  "tn" '(centaur-tabs-forward :which-key "next tab")
  "tt" '(centaur-tabs-backward :which-key "prev-tab")
  )
-
- 
