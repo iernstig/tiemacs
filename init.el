@@ -10,5 +10,6 @@
 (load "keybindings") ;; all keybinding settings
 (load "appearance")
 (load "org-mode")
+(load "treemacs")
 
 

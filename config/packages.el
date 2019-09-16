@@ -41,11 +41,11 @@
 
 (use-package yasnippet :ensure t)
 
-(use-package treemacs :ensure t) ;; tree like file view
-(use-package lsp-treemacs :ensure t)
-(use-package treemacs-evil :ensure t)
-(use-package treemacs-magit :ensure t)
-(use-package treemacs-projectile :ensure t)
+;; (use-package treemacs :ensure t) ;; tree like file view
+;; (use-package lsp-treemacs :ensure t)
+;; (use-package treemacs-evil :ensure t)
+;; (use-package treemacs-magit :ensure t)
+;; (use-package treemacs-projectile :ensure t)
 
 (use-package dashboard :ensure t ;; start dashboard 
   :config
@@ -93,3 +93,5 @@
 			(agenda . 5)
 			(registers . 5)))
 
+;; which-key mode temp fix
+(which-key-setup-side-window-bottom)

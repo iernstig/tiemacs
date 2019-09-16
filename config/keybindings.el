@@ -56,7 +56,7 @@
  ;; o: open
  "o" '(:ignore t :which-key "Treemacs")
  "ot" '(treemacs :which-key "Toggle Treemacs")
- "t?" '(treemacs-helpful-hydra :which-key "Helpful Hydra")
+ "o?" '(treemacs-helpful-hydra :which-key "Helpful Hydra")
 
  ;; centaur tabs
  "t" '(:ignore t :which-key "Centaur tabs")
