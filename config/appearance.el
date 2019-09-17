@@ -54,7 +54,7 @@
 
 ;; enable easier parenthesis reading
 (use-package rainbow-delimiters :ensure t)
-(rainbow-delimiters-mode +1) 
+    (add-hook 'emacs-lisp-mode-hook #'rainbow-delimiters-mode)
 
 ;; easier visuals from searching
 (use-package visual-regexp-steroids :ensure t)
