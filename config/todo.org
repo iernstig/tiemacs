@@ -85,6 +85,17 @@
 ** DONE Switch to previous buffer
 * Exploring plugins [0/0]
 ** Projectile
+   
+Possible structure for the project:
+folders or files? --> Files only to begin. Simpler
+module-configurations
+emacs-settings.el
+packages.el - general package installation
 
+--- Rules ---
+1. install and start all packages in install-packages.el
+2. start up packages in initialize-packages.el
+3. specify specific rules in a file in module-configurations folder
+4. 
 
 
