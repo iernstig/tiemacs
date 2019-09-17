@@ -18,7 +18,12 @@
   (package-install 'use-package)) ;; install the most recent version of use-package
 
 ;; --------------------------------------------------
-;;           Packages installation list 
+;;           Refresh package contents 
+;; --------------------------------------------------
+(when (not package-archive-contents)
+  (package-refresh-contents))
+;; --------------------------------------------------
+;; * Packages installation list 
 ;; --------------------------------------------------
 
 ;; for keybindings
@@ -32,6 +37,8 @@
 (use-package which-key :ensure t) ;; describe keybingings
 
 (use-package projectile :ensure t) ;; project management
+
+(use-package flycheck :ensure t)
 
 (use-package lsp-mode :ensure t) ;; for intelligent code analysis, debugging etc.
 (use-package lsp-ui :ensure t)
