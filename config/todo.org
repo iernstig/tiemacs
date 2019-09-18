@@ -30,7 +30,8 @@
 * Elexir
 
 * MaGit
-** Diff-hl
+** DONE Diff-hl
+** MAYBE Fix Diff-hl update when push
 ** git-undo
 * Projectile
 ** Setup project for compilation:
