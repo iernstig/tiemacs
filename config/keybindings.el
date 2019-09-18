@@ -45,6 +45,10 @@
 
  "g" '(:ignore t :which-key "MaGit")
  "gg" '(magit-status :which-key "Status")
+ "gc" '(magit-commit :which-key "Magit commit") ;; todo: add more of the magit stage commands and learn them
+ "gs" '(:ignore t :which-key "magit stage")
+ "gsf" '(magit-stage-file :which-key "stage file")
+ "gsm" '(magit-stage-modified :which-key "stage modified")
 
  ;; org-mode, temporary!
  "m" '(:ignore t :which-key "Org-mode")
@@ -62,4 +66,5 @@
  "t" '(:ignore t :which-key "Centaur tabs")
  "tn" '(centaur-tabs-forward :which-key "next tab")
  "tt" '(centaur-tabs-backward :which-key "prev-tab")
- )
+ "tc" '(centaur-tabs-do-close :which-key "close-tab")
+ ) 
