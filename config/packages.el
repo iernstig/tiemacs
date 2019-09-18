@@ -1,7 +1,7 @@
-;; --------------------------------------------------
-;;           general package definition
-;;           and bootstrap of use-package
-;; --------------------------------------------------
+;; ------------------------------------------------------------
+;;           general package definition, configuration
+;;                and bootstrap of use-package
+;; ------------------------------------------------------------
 
 (setq package-enable-at-startup nil) ; tells emacs not to load any packages before starting up
 (setq package-archives '(("org"       . "http://orgmode.org/elpa/")
@@ -9,34 +9,49 @@
                          ("melpa"     . "https://melpa.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")))
 (package-initialize)
-;; --------------------------------------------------
+;; ------------------------------------------------------------
 ;;            Bootstrap 'use-package'
-;; --------------------------------------------------
+;; ------------------------------------------------------------
 
 (unless (package-installed-p 'use-package) ;; unless it is already installed
   (package-refresh-contents) ;; update packages archive
   (package-install 'use-package)) ;; install the most recent version of use-package
 
-;; --------------------------------------------------
+;; ------------------------------------------------------------
 ;;           Refresh package contents 
-;; --------------------------------------------------
+;; ------------------------------------------------------------
 (when (not package-archive-contents)
   (package-refresh-contents))
-;; --------------------------------------------------
+
+;; ------------------------------------------------------------
+;;           Install Quelpa-use-package
+;; ------------------------------------------------------------
+(use-package quelpa-use-package :ensure t)
+
+(use-package outshine
+  :quelpa (outshine :fetcher github :repo "alphapapa/outshine"))
+(add-hook 'emacs-lisp-mode 'outshine-mode)
+;; ------------------------------------------------------------
 ;; * Packages installation list 
-;; --------------------------------------------------
+;; ------------------------------------------------------------
 
 ;; for keybindings
 (use-package general :ensure t) 
 ;; Jump to things, not currently used though
 (use-package avy :ensure t) 
 (use-package ivy :ensure t) ;; lightweight emacs vanilla enhancements
+(ivy-mode)
+(use-package smex :ensure t)
+(smex-initialize)
 (use-package counsel :ensure t) ;; addon for ivy
 (use-package swiper :ensure t) ;; addon for ivy
 (use-package evil :ensure t)  ;; essential bindings for buffer nav
+(evil-mode 1)
 (use-package which-key :ensure t) ;; describe keybingings
+(which-key-mode)
 
 (use-package projectile :ensure t) ;; project management
+(projectile-mode 1)
 
 (use-package flycheck :ensure t)
 
@@ -45,6 +60,7 @@
 
 (use-package magit :ensure t)
 (use-package evil-magit :ensure t)
+(use-package diff-hl :ensure t) ; highlight diffs 
 
 (use-package yasnippet :ensure t)
 
@@ -59,7 +75,6 @@
   (dashboard-setup-startup-hook))
 (use-package beacon :ensure t) ;; for showing the cursor in new buffers
 (use-package restart-emacs :ensure t) ;; simple restart of emacs
-(use-package smex :ensure t)
 (use-package hungry-delete :ensure t) ;; delete needless space in files
 ;;(use-package desktop+ :ensure t)
 ;;(use-package anzu :ensure t)
@@ -69,22 +84,8 @@
 ;;           Enable all the packages
 ;; --------------------------------------------------
 
-(require 'smex)
-(smex-initialize)
-(require 'use-package)
-(require 'ivy)
-(ivy-mode)
-(require 'evil)
-(evil-mode 1)
-(require 'which-key)
-(which-key-mode)
-(require 'projectile)
-(projectile-mode +1)
-(require 'beacon)
 (beacon-mode 1)
-(require 'lsp-mode)
 (global-hungry-delete-mode)
-(require 'yasnippet)
 (yas-global-mode 1)
 
 
@@ -100,5 +101,3 @@
 			(agenda . 5)
 			(registers . 5)))
 
-;; which-key mode temp fix
-(which-key-setup-side-window-bottom)
