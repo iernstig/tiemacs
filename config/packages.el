@@ -61,6 +61,7 @@
 (use-package magit :ensure t)
 (use-package evil-magit :ensure t)
 (use-package diff-hl :ensure t) ; highlight diffs 
+(add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh)
 
 (use-package yasnippet :ensure t)
 
