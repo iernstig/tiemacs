@@ -9,3 +9,4 @@ projectile.cache
 var
 .local
 init.el~
+quelpa
