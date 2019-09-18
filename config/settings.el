@@ -24,8 +24,8 @@
 
 ;; some differences regarding which operating system in use
 ;;* TODO 
-(cond ((string-equal system-type "windows-nt")
-       (message "Microsoft Windows"))
-      (string-equal system-type "darwin")
-      (message "OS X")
-	(string-equal system-type "gnu/linux"))
+;(cond ((string-equal system-type "windows-nt")
+;       (message "Microsoft Windows"))
+;      (string-equal system-type "darwin")
+;      (message "OS X")
+;	(string-equal system-type "gnu/linux"))
