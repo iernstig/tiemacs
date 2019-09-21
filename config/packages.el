@@ -36,11 +36,14 @@
 (add-hook 'prog-mode-hook 'outshine-mode) ;; enable for all programming languages
 ;; ugly hack to override default evil bind for elisp
 (define-key emacs-lisp-mode-map (kbd "<tab>") 'org-cycle) 
-
+(use-package pretty-outlines
+  :hook ((outline-mode       . pretty-outlines-set-display-table)
+         (outline-minor-mode . pretty-outlines-set-display-table)
+         (emacs-lisp-mode . pretty-outlines-add-bullets)
+         (python-mode     . pretty-outlines-add-bullets)))
+(defvar pretty-outline-bullets-bullet-list '("◉" "○" "✸" "✿"))
 ;; ------------------------------------------------------------
-;; * Install and enable packages 
-;; ------------------------------------------------------------
-
+;; * Install and enable packages
 ;; ** Packages for editor navigation
 (use-package general :ensure t) 
 ;; Jump to things, not currently used though
@@ -82,8 +85,5 @@
 (use-package restart-emacs :ensure t) ;; simple restart of emacs
 ;;(use-package desktop+ :ensure t)
 ;;(use-package anzu :ensure t)
-;; --------------------------------------------------
-;;           Package configuration section
-;; --------------------------------------------------
 
 
