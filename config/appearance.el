@@ -66,6 +66,9 @@
 (setq centaur-tabs-style "bar")
 (setq centaur-tabs-set-bar 'left)
 (centaur-tabs-group-by-projectile-project)
+(setq centaur-tabs-gray-out-icons 'buffer)
+(setq centaur-tabs-set-modified-marker t)
+(setq centaur-tabs-cycle-scope 'tabs)
 
 ;; ** Color code variables
 (use-package color-identifiers-mode :ensure t)
