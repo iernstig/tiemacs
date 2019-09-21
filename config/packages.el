@@ -1,4 +1,3 @@
-;; ------------------------------------------------------------
 ;; * General package definition, configuration
 ;; ------------------------------------------------------------
 
@@ -22,12 +21,9 @@
 (use-package quelpa-use-package :ensure t)
 
 ;; ------------------------------------------------------------
-;; * Refresh package contents 
-;; ------------------------------------------------------------
+;; * Refresh package contents
 (when (not package-archive-contents)
   (package-refresh-contents))
-
-;; ------------------------------------------------------------
 ;; * Enable outshine mode in all programming buffers
 ;; ------------------------------------------------------------
 (use-package outshine
@@ -35,7 +31,7 @@
 
 (add-hook 'prog-mode-hook 'outshine-mode) ;; enable for all programming languages
 ;; ugly hack to override default evil bind for elisp
-(define-key emacs-lisp-mode-map (kbd "<tab>") 'org-cycle) 
+(define-key emacs-lisp-mode-map (kbd "<tab>") 'org-cycle)
 (use-package pretty-outlines
   :hook ((outline-mode       . pretty-outlines-set-display-table)
          (outline-minor-mode . pretty-outlines-set-display-table)
@@ -45,9 +41,9 @@
 ;; ------------------------------------------------------------
 ;; * Install and enable packages
 ;; ** Packages for editor navigation
-(use-package general :ensure t) 
+(use-package general :ensure t)
 ;; Jump to things, not currently used though
-(use-package avy :ensure t) 
+(use-package avy :ensure t)
 (use-package ivy :ensure t) ;; lightweight emacs vanilla enhancements
 (ivy-mode)
 (use-package smex :ensure t)
@@ -61,7 +57,8 @@
 (use-package projectile :ensure t) ;; project management
 (projectile-mode 1)
 (use-package flycheck :ensure t
-  :init (global-flycheck-mode))
+  :init (global-flycheck-mode)
+  :config (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc)))
 (use-package lsp-mode :ensure t) ;; for intelligent code analysis, debugging etc.
 (use-package lsp-ui :ensure t)
 
@@ -87,6 +84,4 @@
 (use-package aggressive-indent :ensure t)
 (add-hook 'prog-mode-hook #'aggressive-indent-mode)
 ;;(use-package desktop+ :ensure t)
-;;(use-package anzu :ensure t)
-
-
+;;(use-package anzu :ensure t) 
