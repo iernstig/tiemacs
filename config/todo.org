@@ -27,11 +27,10 @@
 **  Web beautify, js-beautify
 
 * Elexir
-
+  
 * MaGit
 ** DONE Diff-hl
-** MAYBE Fix Diff-hl update when push
-** git-undo
+** DONE Fix Diff-hl update when push
 * Projectile
 ** Setup project for compilation:
 *** Python
@@ -40,7 +39,6 @@
 *** JAVA
 *** Node
 *** Elexir
-
 * General fixes [4/6]:
 ** DONE Keybindings for centaur tabs
 ** DONE fix all the icons with sidebar and solarized shit
@@ -48,7 +46,7 @@
 ** DONE Fix auto gen of .emacs.d/auto-save-list/ directory
 ** TODO Might be an idea to fix projectile-command-buffer bug
 ** DONE Fix all the icons for TreeMacs, but let the modeline be left 
-* List of do want plugins[14/34]
+* List of do want plugins[15/34]
 ** TODO BufferStack
 ** TODO DesktopMode / Desktop+ / PerspMode : https://github.com/ffevotte/desktop-plus
 ** TODO Fix dashboard
@@ -66,7 +64,7 @@
 ** TODO FormatAll
 ** TODO AutoComplete / Company / 
 ** TODO FuzzyMatching: FLX
-** TODO FlyCheck
+** DONE FlyCheck
 ** TODO SprayMode, speed reading mode
 ** TODO Anzu: https://github.com/syohex/emacs-anzu
 ** DONE Hungry-delete, remove bunch of spaces simply
