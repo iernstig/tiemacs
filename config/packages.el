@@ -83,6 +83,8 @@
 
 ;; ** Misc useful functions
 (use-package restart-emacs :ensure t) ;; simple restart of emacs
+(use-package aggressive-indent :ensure t)
+(add-hook 'prog-mode-hook #'aggressive-indent-mode)
 ;;(use-package desktop+ :ensure t)
 ;;(use-package anzu :ensure t)
 
