@@ -5,35 +5,37 @@
  :non-normal-prefix "C-SPC"
  "" nil
 
- ;;simple command
- "TAB" '(switch-to-other-buffer :which-key "prev buffer")
- "SPC" '(avy-goto-word-or-subword-1 :which-key "go to char")
-
- ;; create a new prefix (using :ignore t)
- "a" '(:ignore t :which-key "Applications")
- "ad" 'dired
-
+;;; File navigation and M-x
  ":" '(counsel-M-x :which-key "M-x")
  "." '(find-file :which-key "Find file")
 
- ;; Restart commands
+;;; Restart commands
  "q" '(:ignore t :which-key "Quit")
  "qr" '(restart-emacs :which-key "Restart Emacs")
  "qq" '(save-buffers-kill-emacs :which-key "Quit n' save buffers")
 
- ;; commenting commands
+;;; commenting commands
  "c" '(:ignore t :which-key "Comment")
  "cc" '(comment-region :which-key "Comment region")
  "cu" '(uncomment-region :which-key "Uncomment region")
 
- ;; Buffer management
+;;; Buffer management
  "b" '(:ignore t :which-key "Buffer")
  "bb" '(counsel-switch-buffer :which-key "Switch to another buffer")
  "bk" '(kill-current-buffer :which-key "kill current buffer")
  "bx" '(kill-buffer-and-window :which-key "kill current buffer and window")
  "bp" '(previous-buffer :which-key "switch back to prev buffer")
 
- ;; Window navigation and splits
+;;; Outshine mode
+ "n" '(:ignore t "OutShine-Mode")
+ "nn" '(outshine-narrow-to-subtree :which-key "Narrow to subtree at point")
+ "nw" '(widen :which-key "Widen")
+ "nj" '(outline-move-subtree-down :which-key "Move down subtree")
+ "nk" '(outline-move-subtree-up :which-key "Move up subtree")
+ "nh" '(outline-promote :which-key "Promote heading")
+ "nl" '(outline-demote :which-key "Demote heading")
+
+;;; Window navigation and splits
  "w" '(:ignore t :which-key "Window")
  "ws" '(evil-window-split :which-key "split window horizontally")
  "wv" '(evil-window-vsplit :which-key "split window vertically")
@@ -51,14 +53,14 @@
  "gsf" '(magit-stage-file :which-key "stage file")
  "gsm" '(magit-stage-modified :which-key "stage modified")
 
- ;; org-mode, temporary!
+;;; org-mode, temporary!
  "m" '(:ignore t :which-key "Org-mode")
  "mt" '(org-todo :which-key "todo")
 
- ;; p: projects
+;;; p: projects
  "p" '(projectile-command-map :package projectile :which-key "projectile command map")
 
- ;; o: open
+;;;  o: open
  "o" '(:ignore t :which-key "Treemacs")
  "ot" '(treemacs :which-key "Toggle Treemacs")
  "o?" '(treemacs-helpful-hydra :which-key "Helpful Hydra")
