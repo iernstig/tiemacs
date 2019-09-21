@@ -71,3 +71,4 @@
  "tt" '(centaur-tabs-backward :which-key "prev-tab")
  "tc" '(centaur-tabs-do-close :which-key "close-tab")
  ) 
+
