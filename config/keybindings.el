@@ -5,7 +5,7 @@
  :non-normal-prefix "C-SPC"
  "" nil
 
-;;; File navigation and M-x
+;;;  File navigation and M-x
  ":" '(counsel-M-x :which-key "M-x")
  "." '(find-file :which-key "Find file")
 
@@ -14,12 +14,12 @@
  "qr" '(restart-emacs :which-key "Restart Emacs")
  "qq" '(save-buffers-kill-emacs :which-key "Quit n' save buffers")
 
-;;; commenting commands
+;;;  commenting commands
  "c" '(:ignore t :which-key "Comment")
  "cc" '(comment-region :which-key "Comment region")
  "cu" '(uncomment-region :which-key "Uncomment region")
 
-;;; Buffer management
+;;;  Buffer management
  "b" '(:ignore t :which-key "Buffer")
  "bb" '(counsel-switch-buffer :which-key "Switch to another buffer")
  "bk" '(kill-current-buffer :which-key "kill current buffer")
@@ -53,11 +53,11 @@
  "gsf" '(magit-stage-file :which-key "stage file")
  "gsm" '(magit-stage-modified :which-key "stage modified")
 
-;;; org-mode, temporary!
+;;;  org-mode, temporary!
  "m" '(:ignore t :which-key "Org-mode")
  "mt" '(org-todo :which-key "todo")
 
-;;; p: projects
+;;;  p: projects
  "p" '(projectile-command-map :package projectile :which-key "projectile command map")
 
 ;;;  o: open
@@ -65,10 +65,11 @@
  "ot" '(treemacs :which-key "Toggle Treemacs")
  "o?" '(treemacs-helpful-hydra :which-key "Helpful Hydra")
 
- ;; centaur tabs
+;;;  centaur tabs
  "t" '(:ignore t :which-key "Centaur tabs")
  "tn" '(centaur-tabs-forward :which-key "next tab")
  "tt" '(centaur-tabs-backward :which-key "prev-tab")
  "tc" '(centaur-tabs-do-close :which-key "close-tab")
+;;;  YaSnippet
  ) 
 
