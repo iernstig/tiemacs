@@ -65,7 +65,7 @@
 (use-package magit :ensure t)
 (use-package evil-magit :ensure t)
 (use-package diff-hl :ensure t) ; highlight diffs 
-(diff-hl-mode)
+(global-diff-hl-mode)
 (add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh)
 
 (use-package treemacs :ensure t) ;; tree like file view
