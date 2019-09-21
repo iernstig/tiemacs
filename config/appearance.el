@@ -58,17 +58,18 @@
 (use-package visual-regexp-steroids :ensure t)
 
 ;; ** Tabs
-(use-package centaur-tabs :ensure t)
-(require 'centaur-tabs)
-(centaur-tabs-mode 1)
-(setq centaur-tabs-set-icons t)
-(centaur-tabs-headline-match)
-(setq centaur-tabs-style "bar")
-(setq centaur-tabs-set-bar 'left)
-(centaur-tabs-group-by-projectile-project)
-(setq centaur-tabs-gray-out-icons 'buffer)
-(setq centaur-tabs-set-modified-marker t)
-(setq centaur-tabs-cycle-scope 'tabs)
+(use-package centaur-tabs :ensure t
+  :config
+  (setq centaur-tabs-set-icons t
+	centaur-tabs-style "bar"
+	centaur-tabs-set-bar 'left
+	centaur-tabs-gray-out-icons 'buffer
+	centaur-tabs-set-modified-marker t
+	centaur-tabs-cycle-scope 'tabs)
+    (centaur-tabs-mode t)
+    (centaur-tabs-headline-match)
+    (centaur-tabs-group-buffer-groups))
+    
 
 ;; ** Color code variables
 (use-package color-identifiers-mode :ensure t)
