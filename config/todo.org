@@ -46,7 +46,7 @@
 ** DONE Fix auto gen of .emacs.d/auto-save-list/ directory
 ** TODO Might be an idea to fix projectile-command-buffer bug
 ** DONE Fix all the icons for TreeMacs, but let the modeline be left 
-* List of do want plugins[15/34]
+* List of do want plugins[16/34]
 ** TODO BufferStack
 ** TODO DesktopMode / Desktop+ / PerspMode : https://github.com/ffevotte/desktop-plus
 ** TODO Fix dashboard
@@ -60,13 +60,13 @@
 ** TODO IndentGuide
 ** TODO EVIL nerdCommenter
 ** TODO SmartParensMode
-** TODO AgressiveIndentMode
 ** TODO FormatAll
 ** TODO AutoComplete / Company / 
 ** TODO FuzzyMatching: FLX
-** DONE FlyCheck
 ** TODO SprayMode, speed reading mode
 ** TODO Anzu: https://github.com/syohex/emacs-anzu
+** DONE AgressiveIndentMode
+** DONE FlyCheck
 ** DONE Hungry-delete, remove bunch of spaces simply
 ** DONE Color Identifiers Mode, might be better at color than default
 ** DONE CentaurTabs
