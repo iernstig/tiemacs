@@ -56,6 +56,7 @@
 (which-key-mode)
 (use-package projectile :ensure t) ;; project management
 (projectile-mode 1)
+;; *** Flycheck
 (use-package flycheck :ensure t
   :init (global-flycheck-mode)
   :config (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc)))
