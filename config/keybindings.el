@@ -9,7 +9,6 @@
  "TAB" '(switch-to-other-buffer :which-key "prev buffer")
  "SPC" '(avy-goto-word-or-subword-1 :which-key "go to char")
 
-
  ;; create a new prefix (using :ignore t)
  "a" '(:ignore t :which-key "Applications")
  "ad" 'dired
@@ -23,7 +22,9 @@
  "qq" '(save-buffers-kill-emacs :which-key "Quit n' save buffers")
 
  ;; commenting commands
- "c" '(comment-region :which-key "Comment region")
+ "c" '(:ignore t :which-key "Comment")
+ "cc" '(comment-region :which-key "Comment region")
+ "cu" '(uncomment-region :which-key "Uncomment region")
 
  ;; Buffer management
  "b" '(:ignore t :which-key "Buffer")
