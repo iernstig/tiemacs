@@ -60,7 +60,8 @@
 (which-key-mode)
 (use-package projectile :ensure t) ;; project management
 (projectile-mode 1)
-(use-package flycheck :ensure t)
+(use-package flycheck :ensure t
+  :init (global-flycheck-mode))
 (use-package lsp-mode :ensure t) ;; for intelligent code analysis, debugging etc.
 (use-package lsp-ui :ensure t)
 
