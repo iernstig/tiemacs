@@ -28,6 +28,7 @@
 
 ;;; Outshine mode
  "n" '(:ignore t "OutShine-Mode")
+ "ni" '(outshine-insert-heading :which-key "Insert heading")
  "nn" '(outshine-narrow-to-subtree :which-key "Narrow to subtree at point")
  "nw" '(widen :which-key "Widen")
  "nj" '(outline-move-subtree-down :which-key "Move down subtree")
