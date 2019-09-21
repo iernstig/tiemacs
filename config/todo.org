@@ -41,13 +41,13 @@
 *** Node
 *** Elexir
 
-* General fixes [2/4]:
+* General fixes [4/6]:
 ** DONE Keybindings for centaur tabs
-** TODO fix all the icons with sidebar and solarized shit
+** DONE fix all the icons with sidebar and solarized shit
 ** TODO Explore EVIL collections, especially minibuffer mode: https://github.com/emacs-evil/evil-collection/blob/master/evil-collection-minibuffer.el
 ** DONE Fix auto gen of .emacs.d/auto-save-list/ directory
 ** TODO Might be an idea to fix projectile-command-buffer bug
-** TODO Fix all the icons for TreeMacs, but let the modeline be left 
+** DONE Fix all the icons for TreeMacs, but let the modeline be left 
 * List of do want plugins[14/34]
 ** TODO BufferStack
 ** TODO DesktopMode / Desktop+ / PerspMode : https://github.com/ffevotte/desktop-plus
