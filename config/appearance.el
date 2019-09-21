@@ -1,4 +1,5 @@
-;; remove menus from visibility
+;; * Remove emacs vanilla ugly GUI
+;;  remove menus from visibility
 (menu-bar-mode -1)
 ;; tell emacs we never want scroll bars
 (add-to-list 'default-frame-alist
@@ -21,25 +22,25 @@
 	 (set-font "Fira Code" 12)))
 
 ;; ---------------------------------------- 
-;;         Appearance packages  
+;; * Appearance packages
 ;; ---------------------------------------- 
 
-;; load icons
+;; ** Load icons
 (use-package all-the-icons :ensure t)
-;; modeline
+;; ** Modeline
 (use-package doom-modeline :ensure t)
 (require 'doom-modeline)
 (doom-modeline-mode 1)
-;; and theme
-;; (use-package atom-one-dark-theme :ensure t) 
-;; (load-theme 'atom-one-dark t) 
-
+;; ** Theme
 (use-package doom-themes :ensure t)
+(doom-themes-treemacs-config)
 (load-theme 'doom-solarized-dark t)
 
+;; ** Center text, mainly
 (use-package sublimity :ensure t)
 (require 'sublimity-attractive)
 
+;; ** More eye-candy sublime-text-like
 ;;(sublimity-attractive-hide-vertical-border)
 (sublimity-attractive-hide-fringes)
 (setq sublimity-attractive-centering-width 120)
@@ -48,21 +49,15 @@
       sublimity-scroll-drift-lenght 100)
 (sublimity-mode 1)
 
-;; for colors, html etc.
-(use-package rainbow-mode :ensure t)
-(rainbow-mode +1)
 
-;; enable easier parenthesis reading
+;; ** Rainbow mode, easier paren reading
 (use-package rainbow-delimiters :ensure t)
-    (add-hook 'emacs-lisp-mode-hook #'rainbow-delimiters-mode)
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
-;; easier visuals from searching
+;; ** Visual Regexp
 (use-package visual-regexp-steroids :ensure t)
 
-;; for pretty side bars!
-(use-package solaire-mode :ensure t)
-
-;; fancy tabs to be aware of started buffers! 
+;; ** Tabs
 (use-package centaur-tabs :ensure t)
 (require 'centaur-tabs)
 (centaur-tabs-mode 1)
@@ -72,7 +67,21 @@
 (setq centaur-tabs-set-bar 'left)
 (centaur-tabs-group-by-projectile-project)
 
-
-;; for easier spotting of variables
+;; ** Color code variables
 (use-package color-identifiers-mode :ensure t)
-(color-identifiers-mode t)
+(add-hook 'after-init-hook 'global-color-identifiers-mode)
+
+;; ** Dashboard
+(use-package dashboard :ensure t ;; start dashboard 
+  :config
+  (dashboard-setup-startup-hook))
+;; dashboard
+(setq dashboard-banner-logo-title "Welcome to TieMacs")
+(setq dashboard-items '((recents .5)
+			(bookmarks . 5)
+			(projects . 5)
+			(agenda . 5)
+			(registers . 5)))
+;; ** Beacon
+(use-package beacon :ensure t) ;; for showing the cursor in new buffers
+(beacon-mode 1)
