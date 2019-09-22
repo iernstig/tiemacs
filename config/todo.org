@@ -19,10 +19,12 @@
 ** Org-super-agenda
 ** org-noter
 ** org-web: for mobile
-** org-sort-tasks
-** Fix priorities
-** Fix TODO states
+** TODO org-sort-tasks
+** TODO Fix priorities
+** DONE Fix TODO states
 ** Enter to go from TODO -> DONE
+** TODO Org-now: sidebar outline: https://github.com/alphapapa/org-now
+** TODO Fix keybindings for most used org-functions
 * web-mode
 **  Web beautify, js-beautify
 
