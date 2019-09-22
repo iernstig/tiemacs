@@ -35,6 +35,9 @@
  "nk" '(outline-move-subtree-up :which-key "Move up subtree")
  "nh" '(outline-promote :which-key "Promote heading")
  "nl" '(outline-demote :which-key "Demote heading")
+ "nh" '(outshine-insert-heading :which-key "insert heading")
+ "nt" '(outshine-todo :which-key "Todo")
+ 
 
 ;;; Window navigation and splits
  "w" '(:ignore t :which-key "Window")
@@ -54,7 +57,7 @@
  "gsf" '(magit-stage-file :which-key "stage file")
  "gsm" '(magit-stage-modified :which-key "stage modified")
 
-;;;  org-mode, temporary!
+;;; Org-mode, temporary!
  "m" '(:ignore t :which-key "Org-mode")
  "mt" '(org-todo :which-key "todo")
 
