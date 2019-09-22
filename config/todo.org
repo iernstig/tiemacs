@@ -26,7 +26,7 @@
 ** TODO Org-now: sidebar outline: https://github.com/alphapapa/org-now
 ** TODO Fix keybindings for most used org-functions
 * web-mode
-**  Web beautify, js-beautify
+** Web beautify, js-beautify
 
 * Elexir
   
@@ -83,17 +83,3 @@
 ** DONE SpaceBar 
 ** DONE StartupScreen
 ** DONE Switch to previous buffer
-* Exploring plugins [0/0]
-** Projectile
-   
-Possible structure for the project:
-folders or files? --> Files only to begin. Simpler
-module-configurations
-emacs-settings.el
-packages.el - general package installation
-
---- Rules ---
-1. specify specific rules in a file in module-configurations folder
-2. 
-
-
