@@ -66,10 +66,11 @@
 	centaur-tabs-gray-out-icons 'buffer
 	centaur-tabs-set-modified-marker t
 	centaur-tabs-cycle-scope 'tabs)
-    (centaur-tabs-mode t)
-    (centaur-tabs-headline-match)
-    (centaur-tabs-group-buffer-groups))
-    
+  (centaur-tabs-mode t)
+  (centaur-tabs-headline-match)
+  (centaur-tabs-group-buffer-groups)
+  )
+
 
 ;; ** Color code variables
 (use-package color-identifiers-mode :ensure t)
