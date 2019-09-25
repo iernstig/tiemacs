@@ -25,7 +25,16 @@
 (setq org-log-done 'time) 
 (setq org-hierarchical-todo-statistics t)
 ;;; Org-capture templates
-
+(setq org-capture-templates
+      '(("t" "Todo" entry (file "~/org/todo/refile.org")
+	 "* TODO %?\n%U" :empty-lines 1)
+	("T" "Todo with Clipboard" entry (file "~/org/todo/refile.org")
+	 "* TODO %?\n%U\n   %c" :empty-lines 1)
+	("n" "Note" entry (file "~/org/todo/refile.org")
+	 "* NOTE %?\n%U" :empty-lines 1)
+	("N" "Note with Clipboard" entry (file "~/org/todo/refile.org")
+	 "* NOTE %?\n%U\n   %c" :empty-lines 1)
+	))
 ;;; Restart org for changes to take effect
 (org-mode-restart)
 
