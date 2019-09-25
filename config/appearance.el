@@ -34,7 +34,7 @@
 ;; ** Theme
 (use-package doom-themes :ensure t)
 (doom-themes-treemacs-config)
-(load-theme 'doom-solarized-dark t)
+(load-theme 'doom-tomorrow-day t)
 
 ;; ** Center text, mainly
 (use-package sublimity :ensure t)
@@ -57,19 +57,6 @@
 ;; ** Visual Regexp
 (use-package visual-regexp-steroids :ensure t)
 
-;; ** Tabs
-(use-package centaur-tabs :ensure t
-  :config
-  (setq centaur-tabs-set-icons t
-	centaur-tabs-style "bar"
-	centaur-tabs-set-bar 'left
-	centaur-tabs-gray-out-icons 'buffer
-	centaur-tabs-set-modified-marker t
-	centaur-tabs-cycle-scope 'tabs)
-  (centaur-tabs-mode t)
-  (centaur-tabs-headline-match)
-  (centaur-tabs-group-buffer-groups)
-  )
 
 
 ;; ** Color code variables
@@ -90,3 +77,11 @@
 ;; ** Beacon
 (use-package beacon :ensure t) ;; for showing the cursor in new buffers
 (beacon-mode 1)
+
+;;; Flycheck compilation settings
+;; Local Variables:
+;; byte-compile-warnings: (not free-vars unresolved)
+;; End:
+;; Local Variables:
+;; byte-compile-warnings: (not free-vars unresolved)
+;; End:
