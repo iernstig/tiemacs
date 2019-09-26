@@ -26,17 +26,33 @@
 (setq org-hierarchical-todo-statistics t)
 ;;; Org-capture templates
 (setq org-capture-templates
-      '(("t" "Todo" entry (file "~/org/todo/refile.org")
-	 "* TODO %?\n%U" :empty-lines 1)
-	("T" "Todo with Clipboard" entry (file "~/org/todo/refile.org")
-	 "* TODO %?\n%U\n   %c" :empty-lines 1)
-	("n" "Note" entry (file "~/org/todo/refile.org")
-	 "* NOTE %?\n%U" :empty-lines 1)
-	("N" "Note with Clipboard" entry (file "~/org/todo/refile.org")
-	 "* NOTE %?\n%U\n   %c" :empty-lines 1)
-	))
+      '(("t" "Unfiled todo" entry (file+headline "~/org/todo/todo.org" "Tasks")
+	 "* TODO %?\n%U") ;; :empty-lines 1
+	("T" "Unfiled todo with Clipboard" entry (file "~/org/todo/todo.org")
+	 "* TODO %?\n%U\n   %c")
+	("m" "Money related todo" entry+headline (file "~/org/todo/money.org" "Tasks")
+	 "* TODO %?\n%U\n   %c")
+	("p" "Project-idea " entry+headline (file "~/org/todo/project-ideas.org" "Ideas")
+	 "* %?\n%U\n   %c")
+	("u" "Upkeep/Maintenance todo" entry+headline (file "~/org/todo/upkeep.org" "Tasks")
+	 "* TODO %?\n%U\n   %c")
+	("w" "Work related todo" entry+headline (file "~/org/todo/work.org" "Unfiled")
+	 "* TODO %?\n%U\n   %c")
+	("P" "Personal development though/task" entry+headline (file "~/org/todo/personal-development.org" "Unfiled")))
+      )
+
+;; modify the path of the org-capture to accomodate different capture projects
+
+
 ;;; org-journal
-(use-package org-journal :ensure t)
+(use-package org-journal
+  :ensure t
+  :defer t
+  :custom
+  (org-journal-dir "~/journal/"))
+
+(add-hook 'org-journal-mode-hook '(lambda () (setq fill-column 80)))
+(add-hook 'org-journal-mode-hook 'turn-on-auto-fill)
 
 ;;; Restart org for changes to take effect
 (org-mode-restart)
