@@ -9,7 +9,7 @@
 ;;; Set org todo keywords
 (setq org-todo-keywords
       '((sequence "TODO(t)" "IN-PRORGESS(p)" "|" "DONE(d)") 
-	(sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")))
+	));; (sequence  "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
 
 ;;; Outshine insert todo-heading
 (defun outshine-insert-todo-heading ()
