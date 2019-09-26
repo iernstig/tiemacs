@@ -66,10 +66,12 @@
 ;;;  p: projects
  "p" '(projectile-command-map :package projectile :which-key "projectile command map")
 
-;;;  o: open
- "o" '(:ignore t :which-key "Open")
+;;;  o: open and org-mode
+ "o" '(:ignore t :which-key "Open / Org-mode")
  "ot" '(treemacs :which-key "Toggle Treemacs")
  "o?" '(treemacs-helpful-hydra :which-key "Helpful Hydra")
+ "oi" '(org-insert-todo-heading :which-key "insert org todo heading")
+ "ot" '(org-todo :which-key "org-todo")
 
 ;;;  centaur tabs
  "t" '(:ignore t :which-key "Centaur tabs")
