@@ -1,3 +1,4 @@
+;;; Leader key config
 (general-define-key
  :states '(normal visual insert emacs motion)
  :keymaps 'override
@@ -56,6 +57,7 @@
  "nl" '(outline-demote :which-key "Demote heading")
  "nh" '(outshine-insert-heading :which-key "insert heading")
  "nt" '(outshine-todo :which-key "Todo")
+ "nc" '(outshine-cycle-buffer :which-key "Cycle buffer")
  
 ;;;  p: projects
  "p" '(projectile-command-map :package projectile :which-key "projectile command map")
