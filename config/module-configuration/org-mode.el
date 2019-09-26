@@ -35,6 +35,9 @@
 	("N" "Note with Clipboard" entry (file "~/org/todo/refile.org")
 	 "* NOTE %?\n%U\n   %c" :empty-lines 1)
 	))
+;;; org-journal
+(use-package org-journal :ensure t)
+
 ;;; Restart org for changes to take effect
 (org-mode-restart)
 
