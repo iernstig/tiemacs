@@ -26,19 +26,6 @@
  "bx" '(kill-buffer-and-window :which-key "kill current buffer and window")
  "bp" '(previous-buffer :which-key "switch back to prev buffer")
 
-;;; Outshine mode
- "n" '(:ignore t "OutShine-Mode")
- "ni" '(outshine-insert-heading :which-key "Insert heading")
- "nn" '(outshine-narrow-to-subtree :which-key "Narrow to subtree at point")
- "nw" '(widen :which-key "Widen")
- "nj" '(outline-move-subtree-down :which-key "Move down subtree")
- "nk" '(outline-move-subtree-up :which-key "Move up subtree")
- "nh" '(outline-promote :which-key "Promote heading")
- "nl" '(outline-demote :which-key "Demote heading")
- "nh" '(outshine-insert-heading :which-key "insert heading")
- "nt" '(outshine-todo :which-key "Todo")
- 
-
 ;;; Window navigation and splits
  "w" '(:ignore t :which-key "Window")
  "ws" '(evil-window-split :which-key "split window horizontally")
@@ -57,15 +44,24 @@
  "gsf" '(magit-stage-file :which-key "stage file")
  "gsm" '(magit-stage-modified :which-key "stage modified")
 
-;;; Org-mode, temporary!
- "m" '(:ignore t :which-key "Org-mode")
- "mt" '(org-todo :which-key "todo")
-
+ 
+;;; Outshine mode
+ "n" '(:ignore t "OutShine-Mode")
+ "ni" '(outshine-insert-heading :which-key "Insert heading")
+ "nn" '(outshine-narrow-to-subtree :which-key "Narrow to subtree at point")
+ "nw" '(widen :which-key "Widen")
+ "nj" '(outline-move-subtree-down :which-key "Move down subtree")
+ "nk" '(outline-move-subtree-up :which-key "Move up subtree")
+ "nh" '(outline-promote :which-key "Promote heading")
+ "nl" '(outline-demote :which-key "Demote heading")
+ "nh" '(outshine-insert-heading :which-key "insert heading")
+ "nt" '(outshine-todo :which-key "Todo")
+ 
 ;;;  p: projects
  "p" '(projectile-command-map :package projectile :which-key "projectile command map")
 
 ;;;  o: open
- "o" '(:ignore t :which-key "Treemacs")
+ "o" '(:ignore t :which-key "Open")
  "ot" '(treemacs :which-key "Toggle Treemacs")
  "o?" '(treemacs-helpful-hydra :which-key "Helpful Hydra")
 
