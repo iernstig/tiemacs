@@ -15,10 +15,11 @@
  "qr" '(restart-emacs :which-key "Restart Emacs")
  "qq" '(save-buffers-kill-emacs :which-key "Quit n' save buffers")
 
-;;;  commenting commands
- "c" '(:ignore t :which-key "Comment")
- "cc" '(comment-region :which-key "Comment region")
+;;;  commenting and capture commands
+ "c" '(:ignore t :which-key "Comment or capture")
+ "cr" '(comment-region :which-key "Comment region")
  "cu" '(uncomment-region :which-key "Uncomment region")
+ "cc" '(org-capture :which-key "Org-capture")
 
 ;;;  Buffer management
  "b" '(:ignore t :which-key "Buffer")
@@ -58,6 +59,9 @@
  "nh" '(outshine-insert-heading :which-key "insert heading")
  "nt" '(outshine-todo :which-key "Todo")
  "nc" '(outshine-cycle-buffer :which-key "Cycle buffer")
+ 
+;;; org-journal-mode
+ "j" '(:ignore t "org-journal")
  
 ;;;  p: projects
  "p" '(projectile-command-map :package projectile :which-key "projectile command map")
