@@ -52,7 +52,9 @@
 (use-package swiper :ensure t) ;; addon for ivy
 (use-package evil :ensure t)  ;; essential bindings for buffer nav
 (evil-mode 1)
-(use-package which-key :ensure t) ;; describe keybingings
+(use-package which-key :ensure t
+  :config
+  (setq which-key-idle-delay 0.2)) ;; describe keybingings
 (which-key-mode)
 (use-package projectile :ensure t) ;; project management
 (projectile-mode 1)
