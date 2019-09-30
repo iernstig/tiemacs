@@ -11,6 +11,8 @@
       '((sequence "TODO(t)" "IN-PRORGESS(p)" "|" "DONE(d)") 
 	));; (sequence  "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
 
+;;; Org-agenda configuration
+(setq org-agenda-files (list "~/org/todo/todo.org"))
 ;;; Outshine insert todo-heading
 (defun outshine-insert-todo-heading ()
   (interactive)
