@@ -72,6 +72,7 @@
  "o?" '(treemacs-helpful-hydra :which-key "Helpful Hydra")
  "oi" '(org-insert-todo-heading :which-key "insert org todo heading")
  "ot" '(org-todo :which-key "org-todo")
+ "oa" '(org-agenda :which-key "org-agenda")
 
 ;;;  centaur tabs
  "t" '(:ignore t :which-key "Centaur tabs")
