@@ -8,7 +8,7 @@
 
 ;;; Set org todo keywords
 (setq org-todo-keywords
-      '((sequence "TODO(t)" "IN-PRORGESS(p)" "|" "DONE(d)") 
+      '((sequence "TODO(t)" "IN-PRORGESS(p)" "|" "DONE(d)" "ABORT(a)") 
 	));; (sequence  "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
 
 ;;; Org-agenda configuration
