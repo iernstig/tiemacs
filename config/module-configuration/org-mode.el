@@ -11,6 +11,8 @@
       '((sequence "TODO(t)" "IN-PRORGESS(p)" "|" "DONE(d)" "ABORT(a)") 
 	));; (sequence  "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
 
+;;; Set org-priorities
+(setq org-lowest-priority ?G)
 ;;; Org-agenda configuration
 (setq org-agenda-files (list "~/notes/todo.org"))
 ;;; Outshine insert todo-heading
