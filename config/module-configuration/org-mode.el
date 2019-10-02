@@ -12,7 +12,7 @@
 	));; (sequence  "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
 
 ;;; Org-agenda configuration
-(setq org-agenda-files (list "~/org/todo/todo.org"))
+(setq org-agenda-files (list "~/notes/todo.org"))
 ;;; Outshine insert todo-heading
 (defun outshine-insert-todo-heading ()
   (interactive)
@@ -56,6 +56,7 @@
 (add-hook 'org-journal-mode-hook '(lambda () (setq fill-column 80)))
 (add-hook 'org-journal-mode-hook 'turn-on-auto-fill)
 
+;;; Enable org-agenda-mode
 ;;; Restart org for changes to take effect
 (org-mode-restart)
 
