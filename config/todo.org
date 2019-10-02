@@ -83,4 +83,85 @@
 ** DONE SpaceBar 
 ** DONE StartupScreen
 ** DONE Switch to previous buffer
-* 
+
+* EMACS [0/9]
+** TODO get a workflow for c++ projects [/](make an hello world application to test functionality)
+*** TODO Debugger
+*** TODO GOTO definition
+*** TODO Inline documentation
+*** TODO CMAKE doc and suppor
+*** TODO M-x compile
+** TODO PlatformIO
+** TODO Create preview for files
+** TODO Fix org-super-agenda
+** TODO Make capture work as intended
+** TODO Make org-journal start without a strange prompt
+** TODO Make kanban have standard layout
+** TODO Fix archiving for org-mode
+** TODO add waiting again to org-mode
+* Kanban
+#+BEGIN: kanban :layout ("..." . 25) :scope nil
+| TODO                      | IN-PRORGESS | DONE                      | ABORT |
+|---------------------------+-------------+---------------------------+-------|
+| [[org-todo in normal mode with key, (t?)][org-todo in normal mod...]] |             |                           |       |
+| [[https://github.com/Somelauw/evil-org-mode/blob/master/doc/keythemes.org][https://github.com/Som...]] |             |                           |       |
+| [[org-sort-tasks][org-sort-tasks]]            |             |                           |       |
+| [[Fix priorities][Fix priorities]]            |             |                           |       |
+|                           |             | [[Fix TODO states][Fix TODO states]]           |       |
+| [[Org-now: sidebar outline: https://github.com/alphapapa/org-now][Org-now: sidebar outli...]] |             |                           |       |
+| [[Fix keybindings for most used org-functions][Fix keybindings for mo...]] |             |                           |       |
+|                           |             | [[Diff-hl][Diff-hl]]                   |       |
+|                           |             | [[Fix Diff-hl update when push][Fix Diff-hl update whe...]] |       |
+|                           |             | [[Keybindings for centaur tabs][Keybindings for centau...]] |       |
+|                           |             | [[fix all the icons with sidebar and solarized shit][fix all the icons with...]] |       |
+| [[Explore EVIL collections, especially minibuffer mode: https://github.com/emacs-evil/evil-collection/blob/master/evil-collection-minibuffer.el][Explore EVIL collectio...]] |             |                           |       |
+|                           |             | [[Fix auto gen of .emacs.d/auto-save-list/ directory][Fix auto gen of .emacs...]] |       |
+| [[Might be an idea to fix projectile-command-buffer bug][Might be an idea to fi...]] |             |                           |       |
+|                           |             | [[Fix all the icons for TreeMacs, but let the modeline be left][Fix all the icons for ...]] |       |
+| [[BufferStack][BufferStack]]               |             |                           |       |
+| [[DesktopMode / Desktop+ / PerspMode : https://github.com/ffevotte/desktop-plus][DesktopMode / Desktop+...]] |             |                           |       |
+| [[Fix dashboard][Fix dashboard]]             |             |                           |       |
+| [[SideBar with buffer list, project categories. (Modify treemacs?)][SideBar with buffer li...]] |             |                           |       |
+| [[HighligthSymbol?][HighligthSymbol?]]          |             |                           |       |
+| [[Dimmer, highligth current buffer][Dimmer, highligth curr...]] |             |                           |       |
+| [[Goto-line preview][Goto-line preview]]         |             |                           |       |
+| [[YaSnippet / abbrev][YaSnippet / abbrev]]        |             |                           |       |
+| [[iAlign][iAlign]]                    |             |                           |       |
+| [[Killring modes, check through!][Killring modes, check ...]] |             |                           |       |
+| [[IndentGuide][IndentGuide]]               |             |                           |       |
+| [[EVIL nerdCommenter][EVIL nerdCommenter]]        |             |                           |       |
+| [[SmartParensMode][SmartParensMode]]           |             |                           |       |
+| [[FormatAll][FormatAll]]                 |             |                           |       |
+| [[AutoComplete / Company /][AutoComplete / Company /]]  |             |                           |       |
+| [[FuzzyMatching: FLX][FuzzyMatching: FLX]]        |             |                           |       |
+| [[SprayMode, speed reading mode][SprayMode, speed readi...]] |             |                           |       |
+| [[Anzu: https://github.com/syohex/emacs-anzu][Anzu: https://github.c...]] |             |                           |       |
+|                           |             | [[AgressiveIndentMode][AgressiveIndentMode]]       |       |
+|                           |             | [[FlyCheck][FlyCheck]]                  |       |
+|                           |             | [[Hungry-delete, remove bunch of spaces simply][Hungry-delete, remove ...]] |       |
+|                           |             | [[Color Identifiers Mode, might be better at color than default][Color Identifiers Mode...]] |       |
+|                           |             | [[CentaurTabs][CentaurTabs]]               |       |
+|                           |             | [[Solaire-mode for sidebars!][Solaire-mode for sideb...]] |       |
+|                           |             | [[RainbowDelimiters][RainbowDelimiters]]         |       |
+|                           |             | [[VisualRegexpSteriods][VisualRegexpSteriods]]      |       |
+|                           |             | [[RainbowMode?][RainbowMode?]]              |       |
+|                           |             | [[Focus Mode][Focus Mode]]                |       |
+|                           |             | [[Beacon, never lose your cursor again!][Beacon, never lose you...]] |       |
+|                           |             | [[Keep .emacs.d][Keep .emacs.d]]             |       |
+|                           |             | [[RestartEmacs][RestartEmacs]]              |       |
+|                           |             | [[SpaceBar][SpaceBar]]                  |       |
+|                           |             | [[StartupScreen][StartupScreen]]             |       |
+|                           |             | [[Switch to previous buffer][Switch to previous buffer]] |       |
+| [[get a workflow for c++ projects(make an hello world application to test functionality)][get a workflow for c++...]] |             |                           |       |
+| [[Debugger][Debugger]]                  |             |                           |       |
+| [[GOTO definition][GOTO definition]]           |             |                           |       |
+| [[Inline documentation][Inline documentation]]      |             |                           |       |
+| [[CMAKE doc and suppor][CMAKE doc and suppor]]      |             |                           |       |
+| [[M-x compile][M-x compile]]               |             |                           |       |
+| [[PlatformIO][PlatformIO]]                |             |                           |       |
+| [[Create preview for files][Create preview for files]]  |             |                           |       |
+| [[Fix org-super-agenda][Fix org-super-agenda]]      |             |                           |       |
+| [[Make capture work as intended][Make capture work as i...]] |             |                           |       |
+| [[Make org-journal start without a strange prompt][Make org-journal start...]] |             |                           |       |
+ #+END:
+ 
