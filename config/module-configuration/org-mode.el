@@ -8,11 +8,16 @@
 
 ;;; Set org todo keywords
 (setq org-todo-keywords
-      '((sequence "TODO(t)" "IN-PRORGESS(p)" "|" "DONE(d)" "ABORT(a)") 
+      '((sequence "TODO(t)" "IN-PRORGESS(p)" "WAITING(w)" "|" "DONE(d)" "ABORT(a)") 
 	));; (sequence  "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
 
 ;;; Set org-priorities
 (setq org-lowest-priority ?G)
+;;; Setup archiving
+(setq org-archive-location 
+      (concat "~/notes/archives/"
+	      (format-time-string "%Y-%m" (current-time)) "-%s::* " (format-time-string "%Y-%m-%d" (current-time))))
+	      
 ;;; Org-agenda configuration
 (setq org-agenda-files (list "~/notes/todo.org"))
 ;;; Outshine insert todo-heading
@@ -30,22 +35,21 @@
 (setq org-hierarchical-todo-statistics t)
 ;;; Org-capture templates
 (setq org-capture-templates
-      '(("t" "Unfiled todo" entry (file+headline "~/org/todo/todo.org" "Tasks")
+      '(("t" "Unfiled todo" entry (file+headline "~/notes/todo.org" "Tasks")
 	 "* TODO %?\n%U") ;; :empty-lines 1
-	("T" "Unfiled todo with Clipboard" entry (file "~/org/todo/todo.org")
-	 "* TODO %?\n%U\n   %c")
-	("m" "Money related todo" entry+headline (file "~/org/todo/money.org" "Tasks")
-	 "* TODO %?\n%U\n   %c")
-	("p" "Project-idea " entry+headline (file "~/org/todo/project-ideas.org" "Ideas")
-	 "* %?\n%U\n   %c")
-	("u" "Upkeep/Maintenance todo" entry+headline (file "~/org/todo/upkeep.org" "Tasks")
-	 "* TODO %?\n%U\n   %c")
-	("w" "Work related todo" entry+headline (file "~/org/todo/work.org" "Unfiled")
-	 "* TODO %?\n%U\n   %c")
-	("P" "Personal development though/task" entry+headline (file "~/org/todo/personal-development.org" "Unfiled")))
+	("T" "Unfiled todo with Clipboard" entry (file "~/notes/todo.org")
+	 "* TODO %?\n%U\n   %c\n")
+	("m" "Money related todo" entry (file+headline "~/notes/money.org" "Tasks")
+	 "* TODO %?\n%U\n   %c\n")
+	("p" "Project-idea " entry (file+headline "~/notes/project-ideas.org" "Ideas")
+	 "* %?\n%U\n   %c\n")
+	("u" "Upkeep/Maintenance todo" entry (file+headline "~/notes/upkeep.org" "Tasks")
+	 "* TODO %?\n%U\n   %c\n")
+	("w" "Work related todo" entry (file+headline "~/notes/work.org" "Tasks")
+	 "* TODO %?\n%U\n   %c\n")
+	("P" "Personal development idea" entry (file+headline "~/notes/personal-devel-dump.org" "Ideas")
+	 "* %?\n%U\n   %c\n"))
       )
-
-;; modify the path of the org-capture to accomodate different capture projects
 
 
 ;;; org-journal
