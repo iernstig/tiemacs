@@ -17,7 +17,11 @@
 (setq org-archive-location 
       (concat "~/notes/archives/"
 	      (format-time-string "%Y-%m" (current-time)) "-%s::* " (format-time-string "%Y-%m-%d" (current-time))))
-	      
+
+(defun at-org-archive-done-tasks ()
+  (interactive)
+  (org-map-entries 'org-archive-subtree "/DONE" 'file))
+
 ;;; Org-agenda configuration
 (setq org-agenda-files (list "~/notes/todo.org"))
 ;;; Outshine insert todo-heading
