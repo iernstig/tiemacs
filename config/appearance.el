@@ -1,17 +1,17 @@
 ;; * Remove emacs vanilla ugly GUI
-;;  remove menus from visibility
+;; remove menus from visibility
 (menu-bar-mode -1)
-;; tell emacs we never want scroll bars
+;; * tell emacs we never want scroll bars
 (add-to-list 'default-frame-alist
              '(vertical-scroll-bars . nil))
 (tool-bar-mode -1)
-;; remove titlebar text
+;; * remove titlebar text
 (setq frame-title-format nil) 
 
-;; Display line numbers, of course!
+;; * Display line numbers, of course!
 (global-display-line-numbers-mode) 
 
-;; set font, adjust size according to screen size
+;; * set font, adjust size according to screen size
 (defun set-font (fontname fontsize)
   (set-face-attribute 'default nil :font
 		      (format "%s:pixelsize=%d" fontname fontsize)))
@@ -34,7 +34,7 @@
 ;; ** Theme
 (use-package doom-themes :ensure t)
 (doom-themes-treemacs-config)
-(load-theme 'doom-tomorrow-day t)
+(load-theme 'doom-Iosvkem t)
 
 ;; ** Center text, mainly
 (use-package sublimity :ensure t)
