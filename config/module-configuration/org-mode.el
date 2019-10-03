@@ -18,7 +18,7 @@
       (concat "~/notes/archives/"
 	      (format-time-string "%Y-%m" (current-time)) "-%s::* " (format-time-string "%Y-%m-%d" (current-time))))
 
-(defun at-org-archive-done-tasks ()
+(defun org-archive-done-tasks ()
   (interactive)
   (org-map-entries 'org-archive-subtree "/DONE" 'file))
 
