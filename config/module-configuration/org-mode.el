@@ -67,6 +67,8 @@
 (add-hook 'org-journal-mode-hook 'turn-on-auto-fill)
 
 ;;; Enable org-agenda-mode
+;;; org-kanban
+(use-package org-kanban :ensure t)
 ;;; Restart org for changes to take effect
 (org-mode-restart)
 
