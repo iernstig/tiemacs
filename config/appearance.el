@@ -44,9 +44,6 @@
 ;;(sublimity-attractive-hide-vertical-border)
 (sublimity-attractive-hide-fringes)
 (setq sublimity-attractive-centering-width 120)
-(require 'sublimity-scroll)
-(setq sublimity-scroll-weight 100
-      sublimity-scroll-drift-lenght 100)
 (sublimity-mode 1)
 
 
