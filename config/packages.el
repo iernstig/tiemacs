@@ -56,15 +56,16 @@
   :config
   (setq which-key-idle-delay 0.2)) ;; describe keybingings
 (which-key-mode)
+(use-package company :ensure t)
+(add-hook 'after-init-hook 'global-company-mode)
 (use-package projectile :ensure t) ;; project management
 (projectile-mode 1)
-;; *** Flycheck
 (use-package flycheck :ensure t
   :init (global-flycheck-mode)
   :config (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc)))
 (use-package lsp-mode :ensure t) ;; for intelligent code analysis, debugging etc.
 (use-package lsp-ui :ensure t)
-
+(use-package dap-mode :ensure t)
 ;; ** Version control
 (use-package magit :ensure t)
 (use-package evil-magit :ensure t)
