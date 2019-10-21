@@ -11,6 +11,15 @@
       '((sequence "TODO(t)" "IN-PRORGESS(p)" "WAITING(w)" "|" "DONE(d)" "ABORT(a)") 
 	));; (sequence  "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
 
+;;; Function to convert several headlines to todo.
+(defun org-outline-to-TODO ()
+  (interactive)
+  (if (region-active-p)
+      (replace-regexp "^*+" "* TODO" nil (region-beginning) (region-end))
+    (replace-regexp "^*+" "* TODO" nil
+                    (line-beginning-position)
+                    (line-end-position))))
+
 ;;; Set org-priorities
 (setq org-lowest-priority ?G)
 ;;; Setup archiving
@@ -22,6 +31,17 @@
   (interactive)
   (org-map-entries 'org-archive-subtree "/DONE" 'file))
 
+;; make sure we save after each archiving action
+(defun org-archive-save-buffer ()
+  (let ((afile (org-extract-archive-file (org-get-local-archive-location))))
+    (if (file-exists-p afile)
+	(let ((buffer (find-file-noselect afile)))
+	  (if (y-or-n-p (format "Save (%s)" buffer))
+	      (with-current-buffer buffer
+		(save-buffer))
+	    (message "You expressly chose _not_ to save (%s)" buffer)))
+      (message "Ooooops ... (%s) does not exist." afile))))
+(add-hook 'org-archive-hook 'org-archive-save-buffer)   
 ;;; Org-agenda configuration
 (setq org-agenda-files (list "~/notes/todo.org"))
 ;;; Outshine insert todo-heading
@@ -39,20 +59,18 @@
 (setq org-hierarchical-todo-statistics t)
 ;;; Org-capture templates
 (setq org-capture-templates
-      '(("t" "Unfiled todo" entry (file+headline "~/notes/todo.org" "Tasks")
+      '(("t" "Unfiled todo" entry (file+headline "~/notes/todo.org" "Inbox")
 	 "* TODO %?\n%U") ;; :empty-lines 1
-	("T" "Unfiled todo with Clipboard" entry (file "~/notes/todo.org")
+	("T" "Unfiled todo with Clipboard" entry (file+headline "~/notes/todo.org" "Inbox")
 	 "* TODO %?\n%U\n   %c\n")
-	("m" "Money related todo" entry (file+headline "~/notes/money.org" "Tasks")
+	("m" "Money related todo" entry (file+headline "~/notes/todo.org" "Money")
 	 "* TODO %?\n%U\n   %c\n")
-	("p" "Project-idea " entry (file+headline "~/notes/project-ideas.org" "Ideas")
+	("p" "Project-idea " entry (file+headline "~/notes/todo.org" "Project Ideas")
 	 "* %?\n%U\n   %c\n")
-	("u" "Upkeep/Maintenance todo" entry (file+headline "~/notes/upkeep.org" "Tasks")
+	("u" "Upkeep/Maintenance todo" entry (file+headline "~/notes/todo.org" "Maintenance")
 	 "* TODO %?\n%U\n   %c\n")
-	("w" "Work related todo" entry (file+headline "~/notes/work.org" "Tasks")
-	 "* TODO %?\n%U\n   %c\n")
-	("P" "Personal development idea" entry (file+headline "~/notes/personal-devel-dump.org" "Ideas")
-	 "* %?\n%U\n   %c\n"))
+	("w" "Work related todo" entry (file+headline "~/notes/todo.org" "Work Tasks")
+	 "* TODO %?\n%U\n   %c\n"))
       )
 
 
