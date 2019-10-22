@@ -56,16 +56,25 @@
   :config
   (setq which-key-idle-delay 0.2)) ;; describe keybingings
 (which-key-mode)
+;; *** AutoComplete
 (use-package company :ensure t)
 (add-hook 'after-init-hook 'global-company-mode)
+;; rebind auto complete scrolling to C-n C-p
+(with-eval-after-load 'company
+  (define-key company-active-map (kbd "C-n") (lambda () (interactive) (company-complete-common-or-cycle 1)))
+  (define-key company-active-map (kbd "C-p") (lambda () (interactive) (company-complete-common-or-cycle -1))))
+;; *** Projects 
 (use-package projectile :ensure t) ;; project management
 (projectile-mode 1)
+;; *** Highlighting
 (use-package flycheck :ensure t
   :init (global-flycheck-mode)
   :config (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc)))
+;; *** LSP
 (use-package lsp-mode :ensure t) ;; for intelligent code analysis, debugging etc.
 (use-package lsp-ui :ensure t)
 (use-package dap-mode :ensure t)
+(use-package company-lsp :ensure t)
 ;; ** Version control
 (use-package magit :ensure t)
 (use-package evil-magit :ensure t)
