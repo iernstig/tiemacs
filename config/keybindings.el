@@ -71,7 +71,6 @@
  "ot" '(treemacs :which-key "Toggle Treemacs")
  "o?" '(treemacs-helpful-hydra :which-key "Helpful Hydra")
  "oi" '(org-insert-todo-heading :which-key "insert org todo heading")
- "ot" '(org-todo :which-key "org-todo")
  "oa" '(org-agenda :which-key "org-agenda")
 
 ;;;  centaur tabs
@@ -79,6 +78,6 @@
  "tn" '(centaur-tabs-forward :which-key "next tab")
  "tt" '(centaur-tabs-backward :which-key "prev-tab")
  "tc" '(centaur-tabs-do-close :which-key "close-tab")
-;;;  YaSnippet
+ ;;;  YaSnippet
  ) 
 
