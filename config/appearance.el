@@ -39,6 +39,8 @@
 (set-face-foreground 'line-number-current-line "DeepBlueSky") 
 (set-face-background 'org-level-1 nil) ;; set background to none, org-mode
 
+(setq org-todo-keyword-faces
+      '(("TODO" . (:foreground "yellow"))))
 ;; ** Modeline
 (use-package doom-modeline :ensure t)
 (require 'doom-modeline)

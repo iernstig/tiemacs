@@ -87,6 +87,9 @@
 ;;; Enable org-agenda-mode
 ;;; org-kanban
 (use-package org-kanban :ensure t)
+;;; org-pomodoro
+;; to easier get started with activities
+(setq org-pomodoro-length 10)
 ;;; Restart org for changes to take effect
 (org-mode-restart)
 
